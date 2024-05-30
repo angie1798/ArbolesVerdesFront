@@ -4,6 +4,7 @@ function Donate (){
 return(
 <div className='home'>
 Donate
+
 </div>
 )
 }

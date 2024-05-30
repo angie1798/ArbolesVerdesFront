@@ -1,4 +1,5 @@
 import NavBar from "./navbar";
+import Footer from "./footer";
 function Layout ({children}){
 return(
     <>
@@ -6,6 +7,9 @@ return(
         <NavBar/>
     </div>
     {children}
+    <div>
+        <Footer/>
+    </div>
     </>
 );
 }

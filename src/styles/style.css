@@ -9,6 +9,11 @@ body {
     font-weight: 500;
     font-style: normal;
 }
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 .poppins-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -23,14 +28,20 @@ body {
   background: none !important;
 }
 .navbar-custom-background > .a {
-  margin-left: 60px;
+  margin:0;
+    width:50%;
+    padding-left:16px;
+
 }
 .navbar-custom-background > .b {
-  margin-right: 60px;
+  margin:0;
+    width:50%;
+    padding-left:16px;
+    justify-content:end;
   font-size:16px;
 }
 .navbar-brand {
-  font-size: 30px;
+  font-size: 25px;
 }
 #basic-navbar-nav {
   justify-content: end;
@@ -42,21 +53,21 @@ body {
     color: white;
   }
   .navbar-text-home-brand:hover, .navbar-text-home-brand:active {
-    color: white;
+    color: white !important;
   }
 .navbar-text-color-brand {
     color: #4a4a4a;
   }
   .navbar-text-color-brand:hover, .navbar-text-color-brand:active{
-    color: #4a4a4a;
+    color: #4a4a4a !important;
   }
 
 .navbar-text-home:hover {
     color: white;
     border-bottom: 0.125rem solid #b1a17f !important;
 }
-.navbar-text-home:active {
-    color: white;
+.navbar-text-home:active, .navbar-text-home:focus {
+    color: white !important;
     border-bottom: 0.125rem solid #b1a17f !important;
 }
 
@@ -66,8 +77,8 @@ body {
 .navbar-text-color:hover {
   color: #b1a17f;
 }
-.navbar-text-color:active{
-    color: #b1a17f;
+.navbar-text-color:active, .navbar-text-color:focus{
+    color: #b1a17f !important;
 }
 
 .item-selected{
@@ -79,6 +90,10 @@ body {
     color: white;
 }
 
+.home{
+  padding-top:100px;
+}
+
 .header-imagen {
   background-image: url("../img/fondo_arbolesverdes.jpg");
   min-height: 599px;
@@ -88,4 +103,68 @@ body {
 }
 .over {
   color: white;
+}
+
+.footer-style{
+  background-color:#B1A17F !important;
+  color: white;
+}
+.footer-style>.container>.brand-footer{
+  font-size:20px;
+  align-self:center;
+}
+
+.nav-footer{
+  font-size:14px;
+  margin-top:5px;
+}
+.nav-footer-text-color{
+  color:white;
+}
+.nav-footer-text-color:hover, .nav-footer-text-color:active, .nav-footer-text-color:focus{
+  color:white;
+}
+
+.footer-line{
+  margin-top:15px;
+  border-top: 1px #E5D09C solid;
+  width:100%;
+}
+.footer-copyright{
+  margin-top:10px;
+  font-size:16px;
+}
+
+@media only screen and (min-width: 720px) {
+  
+  .navbar-custom-background >.a{
+    padding-left:30px;
+  }
+  .navbar-custom-background >.b{
+    padding-right:30px;
+  }
+
+}
+
+@media (min-width:1200px) {
+  .navbar-custom-background >.a{
+    padding-left: 0px;
+    margin-left:72px;
+  }
+  .navbar-custom-background >.b{
+    padding-right: 0px;
+    margin-right:72px;
+  } 
+  
+  .footer-style>.container>.brand-footer{
+    margin-top:50px;
+    font-size:25px;
+  }
+  .navbar-brand {
+    font-size: 30px;
+  }
+  .nav-footer{
+    font-size:16px;
+    margin-top:10px;
+  }
 }

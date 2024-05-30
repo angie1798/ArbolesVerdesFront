@@ -22,6 +22,7 @@ function NavBar() {
   return (
     <div className="nav-custom-container w-100">
       <Navbar
+      sticky="top"
         expand="lg"
         className="bg-body-tertiary navbar-custom-background container-fluid justify-content-between"
       >
