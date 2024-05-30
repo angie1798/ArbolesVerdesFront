@@ -1,7 +1,10 @@
+import '../styles/style.css'
+import fondo from '../img/fondo_arbolesverdes.jpg'
+
 function Home (){
 return(
-<div>
-    Home
+<div className='header-imagen'>
+    <div className='over'> Hola</div>
 </div>
 )
 }

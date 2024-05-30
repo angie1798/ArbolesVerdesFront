@@ -1,6 +1,8 @@
+import '../styles/style.css'
+
 function Contact (){
     return(
-    <div>
+    <div className='contact'>
         Contact
     </div>
     )
