@@ -24,7 +24,7 @@ body {
   position: absolute;
   top: 0;
 }
-.navbar-custom-background {
+.navbar-custom-background-home{
   background: none !important;
 }
 .navbar-custom-background > .a {
@@ -122,7 +122,7 @@ body {
   color:white;
 }
 .nav-footer-text-color:hover, .nav-footer-text-color:active, .nav-footer-text-color:focus{
-  color:white;
+  color:white !important;
 }
 
 .footer-line{
@@ -132,7 +132,8 @@ body {
 }
 .footer-copyright{
   margin-top:10px;
-  font-size:16px;
+  font-size:14px;
+  text-align:center;
 }
 
 @media only screen and (min-width: 720px) {
@@ -166,5 +167,8 @@ body {
   .nav-footer{
     font-size:16px;
     margin-top:10px;
+  }
+  .footer-copyright{
+    font-size:16px;
   }
 }

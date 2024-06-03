@@ -9,7 +9,7 @@ return(
             ArbolesVerdes
           </div>
         </Container>
-        <Container className="d-flex justify-content-center container-fluid  m-0">
+        <Container className="d-flex justify-content-center container-fluid  m-0 roboto-medium">
         <Nav className="justify-content-center nav-footer">
         <Nav.Item>
           <Nav.Link className="nav-footer-text-color" href="/">INICIO</Nav.Link>
@@ -35,7 +35,6 @@ return(
         <Container className="d-flex justify-content-center container-fluid m-0 p-0">
           <div className="footer-copyright roboto-light">
           © 2024 Derechos Reservados Sembrando Arboles Verdes Nativos de Costa Rica Sociedad Anónima.
-
           </div>
         </Container>
       </Navbar>

@@ -24,7 +24,7 @@ function NavBar() {
       <Navbar
       sticky="top"
         expand="lg"
-        className="bg-body-tertiary navbar-custom-background container-fluid justify-content-between"
+        className={`bg-body-tertiary navbar-custom-background container-fluid justify-content-between ${selected==='/'?'navbar-custom-background-home':''}`}
       >
         <Container className="a" >
           <Navbar.Brand href="/" className={`poppins-medium ${textStyleBrand}`}>
