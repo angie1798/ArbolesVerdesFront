@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
     font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -19,6 +20,18 @@ body {
     font-weight: 500;
     font-style: normal;
   }
+
+.outfit-semibold {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.outfit-bold {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .nav-custom-container {
   position: absolute;
@@ -101,9 +114,6 @@ body {
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
 }
-.over {
-  color: white;
-}
 
 .footer-style{
   background-color:#B1A17F !important;
@@ -136,6 +146,38 @@ body {
   text-align:center;
 }
 
+.banner{
+  position:relative;
+  top:200px;
+  left: 10px;
+  color:white;
+  width:250px;
+  font-size: 30px;
+}
+.text{
+  position: relative;
+  top:150px;
+  left:280px;
+  width:250px;
+  color:white;
+}
+.buttonToDonate{
+  width:150px;
+  position: relative;
+  top: 170px;
+  left: 280px;
+}
+.buttonToDonate>button>div{
+  color: #135A44;
+}
+.arrow{
+  position : absolute;
+  top: 5px;
+  left:120px;
+  width:17px;
+  height:17px;
+}
+
 @media only screen and (min-width: 720px) {
   
   .navbar-custom-background >.a{
@@ -144,7 +186,6 @@ body {
   .navbar-custom-background >.b{
     padding-right:30px;
   }
-
 }
 
 @media (min-width:1200px) {
@@ -170,5 +211,36 @@ body {
   }
   .footer-copyright{
     font-size:16px;
+  }
+  .banner{
+    position:relative;
+    top:216px;
+    left: 72px;
+    color:white;
+    width:332px;
+    font-size: 45px;
+  }
+  .text{
+    position: relative;
+    top:141px;
+    left:875px;
+    width:397px;
+    color:white;
+  }
+  .buttonToDonate{
+    width:160px;
+    position: relative;
+    top: 180px;
+    left: 875px;
+  }
+  .buttonToDonate>button>div{
+    color: #135A44;
+  }
+  .arrow{
+    position : absolute;
+    top: 5px;
+    left:130px;
+    width:17px;
+    height:17px;
   }
 }
