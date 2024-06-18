@@ -5,6 +5,9 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+p{
+  margin-bottom: 0;
+}
 .roboto-medium {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -13,6 +16,17 @@ body {
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  font-style: normal;
+}
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 .poppins-medium {
@@ -42,15 +56,14 @@ body {
 }
 .navbar-custom-background > .a {
   margin:0;
-    width:50%;
-    padding-left:16px;
-
+  width:50%;
+  padding-left:16px;
 }
 .navbar-custom-background > .b {
   margin:0;
-    width:50%;
-    padding-left:16px;
-    justify-content:end;
+  width:50%;
+  padding-left:16px;
+  justify-content:end;
   font-size:16px;
 }
 .navbar-brand {
@@ -103,6 +116,14 @@ body {
     color: white;
 }
 
+.container-right,
+.container-left {
+  width: 50%;
+  align-content: center;
+}
+
+/* Fin estilos del Nav y generales  */
+
 .home{
   padding-top:100px;
 }
@@ -147,37 +168,122 @@ body {
 }
 
 .banner{
-  position:relative;
-  top:200px;
-  left: 10px;
-  color:white;
   width:250px;
+  color:white;
   font-size: 30px;
 }
-.text{
-  position: relative;
-  top:150px;
-  left:280px;
-  width:250px;
+
+.text-white{
   color:white;
+}
+.text-black{
+  color:black;
 }
 .buttonToDonate{
   width:150px;
-  position: relative;
-  top: 170px;
-  left: 280px;
 }
-.buttonToDonate>button>div{
+.buttonToDonate>a{
+  color: #135A44;
+  text-decoration:none;
+}
+.buttonToDonate>a>button{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 17px;
+}
+.buttonToDonate>a>button>div{
   color: #135A44;
 }
-.arrow{
-  position : absolute;
-  top: 5px;
-  left:120px;
-  width:17px;
-  height:17px;
+
+.textArrowButton{
+  height: 16px;
+  line-height: normal;
 }
 
+.arrow{
+  height: 16px;
+}
+.arrow>svg{
+  vertical-align: baseline;
+}
+
+.whoWeAre-banner{
+  display:flex;
+  width:100%;
+  height:445px;
+
+}
+.container-whoWeAre{
+  width:50%;
+}
+.title-container{
+  margin-top: 90px;
+}
+.title{
+  color: #2F715C;
+  font-size: 25px;
+  margin-left:140px;
+}
+.subtitle{
+  color: #8E6818;
+  font-size: 22px;
+  margin-left:140px;
+}
+
+.arbolitos-forms{
+  border-bottom: dashed #E5D09C 1px;
+  margin-top: 108px;
+  text-align: end;
+  margin-right: 180px;
+  padding-right: 44px;
+}
+
+.container-text_button{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-button-whoWeAre,
+.buttonToDonate{
+  width:185px;
+  margin-top: 31px;
+}
+
+.container-button-whoWeAre>a{
+  text-decoration:none;
+}
+.container-button-whoWeAre>a>button{
+  background-color: #135A44 !important;
+  text-decoration:none;
+  color:white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 17px;
+}
+.container-button-whoWeAre>a>button:hover, .container-button-whoWeAre>a>button:focus, .container-button-whoWeAre>a>button:active{
+  color:white;
+}
+.container-principal{
+  display:flex;
+  width:100%;
+}
+
+.problematica {
+  background-image: url("../img/Problematica.png");
+  min-height: 447px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.problematica-text{
+  max-width:432px;
+  margin-left: 140px;
+  margin-top: 27px;
+}
+
+.problematica-button{
+  margin-left:140px;
+}
 @media only screen and (min-width: 720px) {
   
   .navbar-custom-background >.a{
@@ -213,34 +319,15 @@ body {
     font-size:16px;
   }
   .banner{
-    position:relative;
-    top:216px;
-    left: 72px;
-    color:white;
     width:332px;
-    font-size: 45px;
-  }
-  .text{
-    position: relative;
-    top:141px;
-    left:875px;
-    width:397px;
     color:white;
+    font-size: 45px;
+    margin-left: 72px;
   }
   .buttonToDonate{
-    width:160px;
-    position: relative;
-    top: 180px;
-    left: 875px;
+    width:185px;
   }
   .buttonToDonate>button>div{
     color: #135A44;
-  }
-  .arrow{
-    position : absolute;
-    top: 5px;
-    left:130px;
-    width:17px;
-    height:17px;
   }
 }
