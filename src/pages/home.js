@@ -4,7 +4,7 @@ import deforestation from "../img/Deforestation.png"
 import ubicacion from "../img/Ubicacion.png"
 import plantitas from "../img/plantitas.png"
 import CustomButton from "../components/button"
-import { FaArrowRight } from "react-icons/fa";
+import ContactUs from "../components/contact-us";
 
 function Home() {
   return (
@@ -22,7 +22,7 @@ function Home() {
             nisi. Nullam metus eros, dignissim in rutrum nec, egestas ac
           </p>
           <div className="buttonToDonate">
-          <CustomButton color="btn-light" textColor="text-green" text={"Donar"} linkTo={"/"}/>
+          <CustomButton color="btn-light" textColor="text-green" text={"Donar"} linkTo={"/#contacto"}/>
           </div>
         </div>
       </div>
@@ -74,22 +74,38 @@ function Home() {
       {/**inicio de la seccion 4 */}
       <h3 className="poppins-regular title-ubicacion">¿Dónde se ubica el <b>&nbsp;Río Lagarto</b>?</h3>
       <div className="w-100 d-flex container-ubicacion">
-        <div className="w-75 d-flex justify-content-center bbb ">
+        <div className="d-flex justify-content-center bbb ">
           <img src={ubicacion}/>
         </div>
-        <div className="w-25">
-          <img src={plantitas}/>
+        <div className="ccc">
+          <div className="text-ubicacion">
+            <h4 className="poppins-light">
+            <span>País:</span> Costa Rica
+            </h4>
+            <h4 className="poppins-light">
+            <span>Provincia:</span>  Puntarenas
+            </h4>
+            <h4 className="poppins-light">
+            <span>Extensión:</span> 34km
+            </h4>
+          </div>
+          <img src={plantitas} className="align-self-center"/>
         </div>
       </div>
       {/**fin de la seccion 4 */}
       {/**inicio de la seccion 5 */}
       <div className="container-donar">
         <h4 className="poppins-medium text-white">Ayúdanos a detener 
+          <br/>
         la continua deforestación</h4>
         <CustomButton color="btn-light problematica-button" textColor="text-green" text={"Donar"} linkTo={"/"}/>
       </div>
       {/**fin de la seccion 5 */}
       {/**inicio de la seccion 6 */}
+      <a id="contacto">
+      <ContactUs/>
+      </a>
+      
       {/**fin de la seccion 6 */}
     </div>
   );

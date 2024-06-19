@@ -182,22 +182,6 @@ p{
 .text-green{
   color: #135A44;
 }
-/* .buttonToDonate{
-  width:150px;
-}
-.buttonToDonate>a{
-  color: #135A44;
-  text-decoration:none;
-}
-.buttonToDonate>a>button{
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-right: 17px;
-}
-.buttonToDonate>a>button>div{
-  color: #135A44;
-} */
-
 .textArrowButton{
   height: 16px;
   line-height: normal;
@@ -297,6 +281,10 @@ p{
 
 .bbb{
   max-height:293px;
+  width:70%;
+}
+.ccc{
+  width:30%;
 }
 
 .title-ubicacion{
@@ -306,6 +294,16 @@ p{
   margin-bottom:20px;
   display:flex;
   justify-content:center;
+}
+.text-ubicacion{
+  margin-top: 92px;
+  margin-bottom:52px;
+}
+.text-ubicacion>h4{
+  font-size:22px;
+}
+.text-ubicacion>h4>span{
+  color: #8E6818;
 }
 .container-donar{
   background-image: url("../img/CallToAction.png");
@@ -318,6 +316,27 @@ p{
   padding-left:124px;
   padding-top:54px;
   margin-botton:25px;
+}
+
+.container-contact{
+  width:100%;
+  padding-top:75px;
+  min-height:511px;
+}
+.text-contact{
+  padding-top:48px;
+}
+.img-contact{
+  margin-top:83px;
+}
+.container-form{
+  width:433px;
+  border-radius: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 48px 39px 23px 39px ;
+}
+.space-between-form{
+  margin-bottom:28px !important;
 }
 @media only screen and (min-width: 720px) {
   
