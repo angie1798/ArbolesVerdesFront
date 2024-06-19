@@ -1,7 +1,9 @@
 import "../styles/style.css";
 import tree from "../img/trees.png";
 import deforestation from "../img/Deforestation.png"
-import { Button } from "bootstrap";
+import ubicacion from "../img/Ubicacion.png"
+import plantitas from "../img/plantitas.png"
+import CustomButton from "../components/button"
 import { FaArrowRight } from "react-icons/fa";
 
 function Home() {
@@ -20,19 +22,7 @@ function Home() {
             nisi. Nullam metus eros, dignissim in rutrum nec, egestas ac
           </p>
           <div className="buttonToDonate">
-            <a href="/donate">
-              <button
-                type="button"
-                className="btn btn-light w-100 d-flex justify-content-center"
-              >
-                <div className="w-100 roboto-medium textArrowButton">
-                  Donar
-                </div>
-                <div className="arrow">
-                  <FaArrowRight />
-                </div>
-              </button>
-            </a>
+          <CustomButton color="btn-light" textColor="text-green" text={"Donar"} linkTo={"/"}/>
           </div>
         </div>
       </div>
@@ -58,19 +48,7 @@ function Home() {
             ut, sagittis a tortor. Aliquam erat.
           </p>
           <div className="container-button-whoWeAre">
-            <a href="/donate">
-              <button
-                type="button"
-                className="btn w-100 d-flex justify-content-center"
-              >
-                <div className="w-100 roboto-medium textArrowButton">
-                  Ver más
-                </div>
-                <div className="arrow">
-                  <FaArrowRight />
-                </div>
-              </button>
-            </a>
+           <CustomButton color="custom-button-green" textColor="text-white" text={"Ver más"} linkTo={"/about-us"}/>
           </div>
         </div>
       </div>
@@ -85,25 +63,34 @@ function Home() {
           <p className="problematica-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Sed ac justo nisi. Nullam metus eros, dignissim in rutrum.</p>
             <div className="container-button-whoWeAre problematica-button">
-            <a href="/donate">
-              <button
-                type="button"
-                className="btn w-100 d-flex justify-content-center"
-              >
-                <div className="w-100 roboto-medium textArrowButton">
-                  Ver más
-                </div>
-                <div className="arrow">
-                  <FaArrowRight />
-                </div>
-              </button>
-            </a>
+            <CustomButton color="custom-button-green" textColor="text-white" text={"Ver más"} linkTo={"/about-us"}/>
           </div>
         </div>
         <div className="container-right">
           <img src={deforestation}/>
         </div>
       </div>
+      {/*fin de la sección 3*/}
+      {/**inicio de la seccion 4 */}
+      <h3 className="poppins-regular title-ubicacion">¿Dónde se ubica el <b>&nbsp;Río Lagarto</b>?</h3>
+      <div className="w-100 d-flex container-ubicacion">
+        <div className="w-75 d-flex justify-content-center bbb ">
+          <img src={ubicacion}/>
+        </div>
+        <div className="w-25">
+          <img src={plantitas}/>
+        </div>
+      </div>
+      {/**fin de la seccion 4 */}
+      {/**inicio de la seccion 5 */}
+      <div className="container-donar">
+        <h4 className="poppins-medium text-white">Ayúdanos a detener 
+        la continua deforestación</h4>
+        <CustomButton color="btn-light problematica-button" textColor="text-green" text={"Donar"} linkTo={"/"}/>
+      </div>
+      {/**fin de la seccion 5 */}
+      {/**inicio de la seccion 6 */}
+      {/**fin de la seccion 6 */}
     </div>
   );
 }

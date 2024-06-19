@@ -179,7 +179,10 @@ p{
 .text-black{
   color:black;
 }
-.buttonToDonate{
+.text-green{
+  color: #135A44;
+}
+/* .buttonToDonate{
   width:150px;
 }
 .buttonToDonate>a{
@@ -193,7 +196,7 @@ p{
 }
 .buttonToDonate>a>button>div{
   color: #135A44;
-}
+} */
 
 .textArrowButton{
   height: 16px;
@@ -244,26 +247,29 @@ p{
   flex-direction: column;
   justify-content: center;
 }
-.container-button-whoWeAre,
-.buttonToDonate{
+.custom-button{
   width:185px;
   margin-top: 31px;
 }
 
-.container-button-whoWeAre>a{
+.custom-button>a{
   text-decoration:none;
 }
-.container-button-whoWeAre>a>button{
-  background-color: #135A44 !important;
+.custom-button>a>button{
   text-decoration:none;
-  color:white;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 17px;
 }
-.container-button-whoWeAre>a>button:hover, .container-button-whoWeAre>a>button:focus, .container-button-whoWeAre>a>button:active{
+
+.custom-button-green:hover, .custom-button-green:focus, .custom-button-green:active{
   color:white;
 }
+
+.custom-button-green{
+  background-color: #135A44 !important;
+}
+
 .container-principal{
   display:flex;
   width:100%;
@@ -283,6 +289,35 @@ p{
 
 .problematica-button{
   margin-left:140px;
+}
+
+.container-ubicacion{
+  min-height:450px;
+}
+
+.bbb{
+  max-height:293px;
+}
+
+.title-ubicacion{
+  color:#135A44;
+  font-size: 25px;
+  margin-top: 85px;
+  margin-bottom:20px;
+  display:flex;
+  justify-content:center;
+}
+.container-donar{
+  background-image: url("../img/CallToAction.png");
+  min-height: 239px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-donar>h4{
+  padding-left:124px;
+  padding-top:54px;
+  margin-botton:25px;
 }
 @media only screen and (min-width: 720px) {
   
