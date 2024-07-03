@@ -1,12 +1,26 @@
-import "../styles/style.css";
+import { useState, useEffect } from "react";
 import tree from "../img/trees.png";
 import deforestation from "../img/Deforestation.png"
 import ubicacion from "../img/Ubicacion.png"
 import plantitas from "../img/plantitas.png"
 import CustomButton from "../components/button"
 import ContactUs from "../components/contact-us";
+import "../styles/style.css";
 
 function Home() {
+
+  // const [titleClass, setTitleClass] = useState("");
+  // const [imageClass, setImageClass] = useState("");
+  // useEffect(() => {
+  //   if (window.innerWidth < 1200) {
+  //     setTitleClass("mt-4");
+  //     setImageClass("w-100 mt-3");
+  //   } else {
+  //     setTitleClass("");
+  //     setImageClass("");
+  //   }
+  // }, [window.innerWidth]);
+
   return (
     <div>
       {/* Seccion del hero */}
@@ -56,7 +70,7 @@ function Home() {
       {/*Inicio sección 3*/ }
       <div className="container-principal problematica">
         <div className="container-left">
-        <h2 className="title poppins-regular">Problemática</h2>
+        <h2 className={`title poppins-regular problematica-title ${window.innerWidth<1200?'mt-4':''}`}>Problemática</h2>
           <h4 className="subtitle poppins-light">
           ¿Por qué debe importarnos?
           </h4>
@@ -67,7 +81,7 @@ function Home() {
           </div>
         </div>
         <div className="container-right">
-          <img src={deforestation}/>
+          <img src={deforestation} className={window.innerWidth<1200?'w-100 mt-3':''}/>
         </div>
       </div>
       {/*fin de la sección 3*/}

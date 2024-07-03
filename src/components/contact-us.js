@@ -4,7 +4,7 @@ import plantasVerdes from "../img/plantas_rayita.png";
 import "../styles/style.css";
 function ContactUs(){
 return(
-        <div className="container-contact w-100 d-flex flex-row">
+        <div className="container-contact w-100 d-flex">
             <div className="container-left text-contact align-content-start">
                 <h4 className="poppins-regular title">
                 Contáctanos

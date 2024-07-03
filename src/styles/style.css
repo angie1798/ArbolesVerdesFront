@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+/*inicio de estilos generales*/
 body {
     font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -46,7 +46,39 @@ p{
   font-weight: 700;
   font-style: normal;
 }
+.text-white{
+  color:white;
+}
+.text-black{
+  color:black;
+}
+.text-green{
+  color: #135A44;
+}
+.text-beige{
+  color:#B1A17F;
+}
+.fontSize-16{
+  font-size:16px;
+}
+/*fin de estilos generales*/
 
+.navbar-custom-background >.a{
+  padding-left: 0px;
+  margin-left:72px;
+}
+.navbar-custom-background >.b{
+  padding-right: 0px;
+  margin-right:72px;
+} 
+
+.buttonToDonate{
+  width:185px;
+}
+.buttonToDonate>button>div{
+  color: #135A44;
+}
+/************/
 .nav-custom-container {
   position: absolute;
   top: 0;
@@ -65,6 +97,7 @@ p{
   padding-left:16px;
   justify-content:end;
   font-size:16px;
+  padding-right:16px;
 }
 .navbar-brand {
   font-size: 25px;
@@ -118,7 +151,7 @@ p{
 
 .container-right,
 .container-left {
-  width: 50%;
+  width: 100%;
   align-content: center;
 }
 
@@ -134,6 +167,9 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+  flex-direction:column;
+  padding-top: 120px;
+  padding-left: 24px;
 }
 
 .footer-style{
@@ -173,18 +209,6 @@ p{
   font-size: 30px;
 }
 
-.text-white{
-  color:white;
-}
-.text-black{
-  color:black;
-}
-.text-green{
-  color: #135A44;
-}
-.text-beige{
-  color:#B1A17F;
-}
 .textArrowButton{
   height: 16px;
   line-height: normal;
@@ -200,24 +224,24 @@ p{
 .whoWeAre-banner{
   display:flex;
   width:100%;
-  height:445px;
-
+  min-height:445px;
+  flex-direction:column;
 }
 .container-whoWeAre{
-  width:50%;
+  width:100%;
 }
 .title-container{
-  margin-top: 90px;
+  margin-top: 52px;
 }
 .title{
   color: #2F715C;
   font-size: 25px;
-  margin-left:140px;
+  margin-left:24px;
 }
 .subtitle{
   color: #8E6818;
   font-size: 22px;
-  margin-left:140px;
+  margin-left:24px;
 }
 
 .max-title{
@@ -228,17 +252,17 @@ p{
 }
 .arbolitos-forms{
   border-bottom: dashed #E5D09C 1px;
-  margin-top: 108px;
-  text-align: end;
-  margin-right: 180px;
-  padding-right: 44px;
+  margin-top: 32px;
+  margin-bottom:24px;
 }
 
 .container-text_button{
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left:24px;
+  padding-bottom:32px;
 }
 .custom-button{
   width:185px;
@@ -266,6 +290,7 @@ p{
 .container-principal{
   display:flex;
   width:100%;
+  flex-direction:column;
 }
 
 .problematica {
@@ -276,37 +301,42 @@ p{
 }
 .problematica-text{
   max-width:432px;
-  margin-left: 140px;
+  margin-left: 24px;
   margin-top: 27px;
 }
 
 .problematica-button{
-  margin-left:140px;
+  margin-left:24px;
 }
 
 .container-ubicacion{
   min-height:450px;
+  flex-direction:column;
 }
 
 .bbb{
   max-height:293px;
-  width:70%;
+  width:100%;
+}
+.bbb>img{
+  width:100%;
 }
 .ccc{
-  width:30%;
+  width:100%;
+  text-align:center;
 }
 
 .title-ubicacion{
   color:#135A44;
   font-size: 25px;
-  margin-top: 85px;
+  margin-top: 48px;
   margin-bottom:20px;
   display:flex;
   justify-content:center;
 }
 .text-ubicacion{
-  margin-top: 92px;
-  margin-bottom:52px;
+  margin-top: 52px;
+  margin-bottom:32px;
 }
 .text-ubicacion>h4{
   font-size:22px;
@@ -322,21 +352,22 @@ p{
 }
 
 .container-donar>h4{
-  padding-left:124px;
+  padding-left:24px;
   padding-top:54px;
   margin-botton:25px;
 }
 
 .container-contact{
   width:100%;
-  padding-top:75px;
   min-height:511px;
+  flex-direction:column;
 }
 .text-contact{
   padding-top:48px;
 }
 .img-contact{
   margin-top:83px;
+  width:100%;
 }
 .container-form{
   width:433px;
@@ -405,24 +436,13 @@ p{
   height:24px;
   margin-right:5px;
 }
-.fontSize-16{
-  font-size:16px;
-}
+
 .iconos-donacion-container{
   margin-left:138px;
   width:500px;
 }
 
-@media only screen and (min-width: 720px) {
-  
-  .navbar-custom-background >.a{
-    padding-left:30px;
-  }
-  .navbar-custom-background >.b{
-    padding-right:30px;
-  }
-}
-
+/*inicio de web*/
 @media (min-width:1200px) {
   .navbar-custom-background >.a{
     padding-left: 0px;
@@ -432,7 +452,6 @@ p{
     padding-right: 0px;
     margin-right:72px;
   } 
-  
   .footer-style>.container>.brand-footer{
     margin-top:50px;
     font-size:25px;
@@ -458,5 +477,345 @@ p{
   }
   .buttonToDonate>button>div{
     color: #135A44;
+  }
+
+   .nav-custom-container {
+    position: absolute;
+    top: 0;
+  } 
+   .navbar-custom-background-home{
+    background: none !important;
+  } 
+  .navbar-custom-background > .a {
+    margin:0;
+    width:50%;
+    padding-left:16px;
+  }
+  .navbar-custom-background > .b {
+    margin:0;
+    width:50%;
+    padding-left:16px;
+    justify-content:end;
+    font-size:16px;
+    margin-right:16px;
+  }
+  #basic-navbar-nav {
+    justify-content: end;
+  }
+  .navbar-text-home {
+    color: white;
+  }
+  .navbar-text-home-brand {
+      color: white;
+    }
+    .navbar-text-home-brand:hover, .navbar-text-home-brand:active {
+      color: white !important;
+    }
+  .navbar-text-color-brand {
+      color: #4a4a4a;
+    }
+    .navbar-text-color-brand:hover, .navbar-text-color-brand:active{
+      color: #4a4a4a !important;
+    }
+  
+  .navbar-text-home:hover {
+      color: white;
+      border-bottom: 0.125rem solid #b1a17f !important;
+  }
+  .navbar-text-home:active, .navbar-text-home:focus {
+      color: white !important;
+      border-bottom: 0.125rem solid #b1a17f !important;
+  }
+  
+  .navbar-text-color {
+    color: #4a4a4a;
+  }
+  .navbar-text-color:hover {
+    color: #b1a17f;
+  }
+  .navbar-text-color:active, .navbar-text-color:focus{
+      color: #b1a17f !important;
+  }
+  
+  .item-selected{
+      border-bottom: 0.125rem solid #b1a17f !important;
+      color: #b1a17f;
+  }
+  .welcome-selected{
+      border-bottom: 0.125rem solid #b1a17f !important;
+      color: white;
+  }
+  
+  .container-right,
+  .container-left {
+    width: 50%;
+    align-content: center;
+  }
+  
+  /* Fin estilos del Nav y generales  */
+  
+  .home{
+    padding-top:100px;
+  }
+  
+  .header-imagen {
+    background-image: url("../img/fondo_arbolesverdes.jpg");
+    min-height: 599px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+    flex-direction:row;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+  
+  .footer-style{
+    background-color:#B1A17F !important;
+    color: white;
+  }
+  
+  .nav-footer-text-color{
+    color:white;
+  }
+  .nav-footer-text-color:hover, .nav-footer-text-color:active, .nav-footer-text-color:focus{
+    color:white !important;
+  }
+  
+  .footer-line{
+    margin-top:15px;
+    border-top: 1px #E5D09C solid;
+    width:100%;
+  }
+  
+  .textArrowButton{
+    height: 16px;
+    line-height: normal;
+  }
+  
+  .arrow{
+    height: 16px;
+  }
+  .arrow>svg{
+    vertical-align: baseline;
+  }
+  
+  .whoWeAre-banner{
+    display:flex;
+    width:100%;
+    height:445px;
+    flex-direction:row;
+  
+  }
+  .container-whoWeAre{
+    width:50%;
+  }
+  .title-container{
+    margin-top: 90px;
+  }
+  .title{
+    color: #2F715C;
+    font-size: 25px;
+    margin-left:140px;
+  }
+  .subtitle{
+    color: #8E6818;
+    font-size: 22px;
+    margin-left:140px;
+  }
+  
+  .max-title{
+    font-size:35px;
+  }
+  .bigger-title{
+    font-size:30px;
+  }
+  .arbolitos-forms{
+    border-bottom: dashed #E5D09C 1px;
+    margin-top: 108px;
+    text-align: end;
+    margin-right: 180px;
+    padding-right: 44px;
+  }
+  
+  .container-text_button{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .custom-button{
+    width:185px;
+    margin-top: 31px;
+  }
+  
+  .custom-button>a{
+    text-decoration:none;
+  }
+  .custom-button>a>button{
+    text-decoration:none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 17px;
+  }
+  
+  .custom-button-green:hover, .custom-button-green:focus, .custom-button-green:active{
+    color:white;
+  }
+  
+  .custom-button-green{
+    background-color: #135A44 !important;
+  }
+  
+  .container-principal{
+    display:flex;
+    width:100%;
+    flex-direction:row;
+  }
+  
+  .problematica {
+    background-image: url("../img/Problematica.png");
+    min-height: 447px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .problematica-text{
+    max-width:432px;
+    margin-left: 140px;
+    margin-top: 27px;
+  }
+  
+  .problematica-button{
+    margin-left:140px;
+  }
+  
+  .container-ubicacion{
+    min-height:450px;
+    flex-direction:row;
+  }
+  
+  .bbb{
+    max-height:293px;
+    width:70%;
+  }
+  .bbb>img{
+    width:701px;
+  }
+  .ccc{
+    width:30%;
+    text-align:initial;
+  }
+  
+  .title-ubicacion{
+    color:#135A44;
+    font-size: 25px;
+    margin-top: 85px;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:center;
+  }
+  .text-ubicacion{
+    margin-top: 92px;
+    margin-bottom:52px;
+  }
+  .text-ubicacion>h4{
+    font-size:22px;
+  }
+  .text-ubicacion>h4>span{
+    color: #8E6818;
+  }
+  .container-donar{
+    background-image: url("../img/CallToAction.png");
+    min-height: 239px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .container-donar>h4{
+    padding-left:124px;
+    padding-top:54px;
+    margin-botton:25px;
+  }
+  
+  .container-contact{
+    padding-top:75px;
+    flex-direction:row;
+  }
+  .text-contact{
+    padding-top:48px;
+  }
+  .img-contact{
+    margin-top:83px;
+  }
+  .container-form{
+    width:433px;
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 48px 39px 23px 39px ;
+  }
+  .space-between-form{
+    margin-bottom:28px !important;
+  }
+  
+  .como-donar{
+    background-image: url("../img/Problematica_donar.png");
+    width:100%;
+    min-height: 446px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .alineacion-texto-left{
+    width: 432px;
+    margin-left:140px;
+    align-content:start;
+  }
+  .alineacion-texto-left>h4{
+    margin-left:0;
+  }
+  .alineacion-texto-left>p{
+    margin-top:26px;
+    margin-bottom:95px;
+  }
+  .container-seccion1-donar{
+    max-height:419px;
+  }
+  .container-section1-texts>p{
+    margin-top:24px;
+  }
+  .circle-gradient{
+    background: radial-gradient(circle farthest-side at 50% 50%, rgba(225, 202, 145, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    height: 467px;
+    width:467px;
+    border-radius:60%;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .background-abstract{
+    background-image: url("../img/abstract.png");
+    height:219px;
+    width:183px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top:114px;
+    margin-right:30px;
+  }
+  .container-section1-texts{
+    width:408px;
+    margin-top:114px;
+  
+  }
+  .imagen-pajaros{
+    margin-left:110px;
+  }
+  .iconos-donacion{
+    width:24px;
+    height:24px;
+    margin-right:5px;
+  }
+  
+  .iconos-donacion-container{
+    margin-left:138px;
+    width:500px;
   }
 }
