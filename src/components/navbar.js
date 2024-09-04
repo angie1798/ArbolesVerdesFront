@@ -3,21 +3,38 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "../styles/style.css";
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function NavBar() {
   const [textStyle, setTextStyle] = useState("navbar-text-home");
   const [textStyleBrand, setTextStyleBrand] = useState("navbar-text-home-brand");
   const [selected, setSelected] = useState("");
+  const navigate = useNavigate();
+  const location = useLocation();
+
   useEffect(() => {
-    setSelected(window.location.pathname);
-    if (window.location.pathname !== "/") {
+    setSelected(location.pathname);
+    if (location.pathname !== "/") {
       setTextStyle("navbar-text-color");
       setTextStyleBrand("navbar-text-color-brand");
     } else {
       setTextStyle("navbar-text-home");
       setTextStyleBrand("navbar-text-home-brand");
     }
-  }, [window.location.pathname]);
+  }, [location.pathname]);
+
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    if(location.pathname!=='/donate'){
+    navigate('/');
+    }
+    setTimeout(() => {
+      const section = document.getElementById('contacto');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
 
   return (
     <div className="nav-custom-container w-100">
@@ -47,7 +64,7 @@ function NavBar() {
               <Nav.Link className={`${textStyle} ${selected==='/history'? 'item-selected':''}`} href="/history">
                 HISTORIA
               </Nav.Link>
-              <Nav.Link className={`${textStyle} ${selected==='/contact'? 'item-selected':''}`} href="/contact">
+              <Nav.Link className={`${textStyle}`} onClick={handleContactClick}>
                 CONTÁCTANOS
               </Nav.Link>
             </Nav>

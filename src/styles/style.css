@@ -55,6 +55,9 @@ p{
 .text-green{
   color: #135A44;
 }
+.text-green-button{
+  color: #064402;
+}
 .text-beige{
   color:#B1A17F;
 }
@@ -279,12 +282,22 @@ p{
   padding-right: 17px;
 }
 
-.custom-button-green:hover, .custom-button-green:focus, .custom-button-green:active{
+.custom-button-green:hover{
   color:white;
+  background-color:#044430 !important;
 }
 
-.custom-button-green{
+.custom-button-green, .custom-button-green:focus, .custom-button-green:active{
   background-color: #135A44 !important;
+}
+
+.btn-white:hover{
+  background-color:#DCF3EC;
+}
+
+.btn-white, .btn-white:focus, .btn-white:active{
+  background-color:white;
+
 }
 
 .container-principal{
@@ -370,7 +383,8 @@ p{
   width:100%;
 }
 .container-form{
-  width:433px;
+  width:100%;
+  max-width:433px;
   border-radius: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 48px 39px 23px 39px ;
@@ -384,48 +398,56 @@ p{
   width:100%;
   min-height: 446px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
+  flex-direction: column;
 }
 
 .alineacion-texto-left{
-  width: 432px;
-  margin-left:140px;
-  align-content:start;
+  max-width: 432px;
+  width: 100%;
+  padding-top: 24px;
+  padding-left: 24px;
+  align-content: start;
 }
 .alineacion-texto-left>h4{
   margin-left:0;
 }
 .alineacion-texto-left>p{
-  margin-top:26px;
-  margin-bottom:95px;
+  margin-top: 24px;
+  margin-bottom: 52px;
 }
 .container-seccion1-donar{
-  max-height:419px;
+  min-height: 419px;
+  flex-direction: column;
 }
 .container-section1-texts>p{
   margin-top:24px;
 }
 .circle-gradient{
   background: radial-gradient(circle farthest-side at 50% 50%, rgba(225, 202, 145, 1) 0%, rgba(255, 255, 255, 1) 100%);
-  height: 467px;
-  width:467px;
+  width: 100%;
+  height: 100%;
+  max-height: 467px;
+  max-width: 467px;
   border-radius:60%;
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 .background-abstract{
   background-image: url("../img/abstract.png");
-  height:219px;
-  width:183px;
+  height: 219px;
+  width: 183px;
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top:114px;
-  margin-right:30px;
+  margin-top: 24px;
+  margin-right: 30px;
 }
 .container-section1-texts{
-  width:408px;
-  margin-top:114px;
+  width: 408px;
+  margin-top: 24px;
 
 }
 .imagen-pajaros{
@@ -438,8 +460,14 @@ p{
 }
 
 .iconos-donacion-container{
-  margin-left:138px;
-  width:500px;
+  padding-left: 24px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.pajaros-img{
+  width: 100%;
+  margin-top: 24px;
 }
 
 /*inicio de web*/
@@ -646,6 +674,7 @@ p{
   .custom-button{
     width:185px;
     margin-top: 31px;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
   }
   
   .custom-button>a{
@@ -656,14 +685,6 @@ p{
     padding-top: 12px;
     padding-bottom: 12px;
     padding-right: 17px;
-  }
-  
-  .custom-button-green:hover, .custom-button-green:focus, .custom-button-green:active{
-    color:white;
-  }
-  
-  .custom-button-green{
-    background-color: #135A44 !important;
   }
   
   .container-principal{
@@ -686,6 +707,9 @@ p{
   
   .problematica-button{
     margin-left:140px;
+  }
+  .deforestacion-button{
+    margin-left:124px;
   }
   
   .container-ubicacion{
@@ -745,9 +769,9 @@ p{
   }
   .img-contact{
     margin-top:83px;
+    width: auto;
   }
   .container-form{
-    width:433px;
     border-radius: 30px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 48px 39px 23px 39px ;
@@ -762,43 +786,37 @@ p{
     min-height: 446px;
     background-repeat: no-repeat;
     background-size: contain;
+    flex-direction: row;
   }
   
   .alineacion-texto-left{
-    width: 432px;
-    margin-left:140px;
-    align-content:start;
+    padding-left: 140px;
   }
   .alineacion-texto-left>h4{
     margin-left:0;
   }
   .alineacion-texto-left>p{
     margin-top:26px;
-    margin-bottom:95px;
+    margin-bottom:64px;
   }
   .container-seccion1-donar{
-    max-height:419px;
+    flex-direction: row;
   }
   .container-section1-texts>p{
     margin-top:24px;
   }
   .circle-gradient{
-    background: radial-gradient(circle farthest-side at 50% 50%, rgba(225, 202, 145, 1) 0%, rgba(255, 255, 255, 1) 100%);
-    height: 467px;
-    width:467px;
-    border-radius:60%;
-    display: flex;
-      align-items: center;
-      justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
   .background-abstract{
     background-image: url("../img/abstract.png");
-    height:219px;
-    width:183px;
+    height: 219px;
+    width: 183px;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-top:114px;
-    margin-right:30px;
+    margin-top: 114px;
+    margin-right: 30px;
   }
   .container-section1-texts{
     width:408px;
@@ -815,7 +833,11 @@ p{
   }
   
   .iconos-donacion-container{
-    margin-left:138px;
-    width:500px;
+    padding-left: 0px;
+    margin-left: 138px;
+  }
+
+  .pajaros-img{
+    width: auto;
   }
 }

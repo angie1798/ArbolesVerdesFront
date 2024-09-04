@@ -36,7 +36,7 @@ function Home() {
             nisi. Nullam metus eros, dignissim in rutrum nec, egestas ac
           </p>
           <div className="buttonToDonate">
-          <CustomButton color="btn-light" textColor="text-green" text={"Donar"} linkTo={"/#contacto"}/>
+          <CustomButton color="btn-white" textColor="text-green-button" text={"Donar"} linkTo={"/donate"}/>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@ function Home() {
         <h4 className="poppins-medium text-white">Ayúdanos a detener 
           <br/>
         la continua deforestación</h4>
-        <CustomButton color="btn-light problematica-button" textColor="text-green" text={"Donar"} linkTo={"/"}/>
+        <CustomButton color="btn-white deforestacion-button" textColor="text-green-button" text={"Donar"} linkTo={"/donate"}/>
       </div>
       {/**fin de la seccion 5 */}
       {/**inicio de la seccion 6 */}

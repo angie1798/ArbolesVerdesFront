@@ -19,7 +19,6 @@ return(
       <Route path="about-us" element={<AboutUs />} />
       <Route path="donate" element={<Donate />} />
       <Route path="history" element={<History />} />
-      <Route path="contact" element={<Contact />} />
     </Routes>
   </Layout>
   </BrowserRouter>
