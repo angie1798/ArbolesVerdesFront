@@ -18,8 +18,8 @@ function Donate() {
               en pro de la conservación
             </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-              justo nisi. Nullam metus eros, dignissim.
+              Tu ayuda puede marcar la diferencia: doná para preservar el cauce del Río Lagarto y asegurar agua limpia y vida para las futuras generaciones. 
+Cada aporte suma en la protección de este vital ecosistema que nos conecta con la naturaleza y beneficia a muchas comunidades.
             </p>
           </div>
         </div>
@@ -58,10 +58,34 @@ function Donate() {
           </div>
           <div className="d-flex iconos-donacion-container">
             <div className="w-50">
-              <p>Número</p>
+              <p>Dólares:</p>
             </div>
             <div className="w-50">
-              <p>Número de teléfono: (+506) 88888</p>
+              <p>Teléfono: (+506) 6183-7133</p>
+            </div>
+          </div>
+          <div className="d-flex iconos-donacion-container">
+            <div className="w-50">
+              <p>Cuenta IBAN: CR92016111004120978788</p>
+            </div>
+            <div className="w-50">
+              <p>Eduardo Morales Meza</p>
+            </div>
+          </div>
+          <div className="d-flex iconos-donacion-container">
+            <div className="w-50">
+              <p>Banco de Costa Rica</p>
+            </div>
+            <div className="w-50">
+              {/* <p>Eduardo Morales Meza</p> */}
+            </div>
+          </div>
+          <div className="d-flex iconos-donacion-container">
+            <div className="w-50">
+              <p>Celso Arguedas Sanchez</p>
+            </div>
+            <div className="w-50">
+              {/* <p>Eduardo Morales Meza</p> */}
             </div>
           </div>
         </div>

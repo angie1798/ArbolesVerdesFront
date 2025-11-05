@@ -39,7 +39,7 @@ return(
           <Nav.Link className="nav-footer-text-color" href="donate">DONAR</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link className="nav-footer-text-color" href="history">HISTORIA</Nav.Link>
+          <Nav.Link className="nav-footer-text-color" href="history">PROBLEMÁTICA</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link className="nav-footer-text-color" onClick={handleContactClick}>CONTÁCTANOS</Nav.Link>

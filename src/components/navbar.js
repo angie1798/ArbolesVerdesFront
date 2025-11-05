@@ -62,7 +62,7 @@ function NavBar() {
                 DONAR
               </Nav.Link>
               <Nav.Link className={`${textStyle} ${selected==='/history'? 'item-selected':''}`} href="/history">
-                HISTORIA
+                PROBLEMÁTICA
               </Nav.Link>
               <Nav.Link className={`${textStyle}`} onClick={handleContactClick}>
                 CONTÁCTANOS

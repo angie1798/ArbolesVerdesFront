@@ -32,8 +32,9 @@ function Home() {
         </div>
         <div className="container-right">
           <p  className="w-75 text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac justo
-            nisi. Nullam metus eros, dignissim in rutrum nec, egestas ac
+            El Río Lagarto es un arroyo ubicado en la provincia de Puntarenas, Costa Rica.
+             La afectación de su cauce ha sido ocacionado por la tala de árboles, la contaminación de las aguas por 
+             los químicos y la extracción de material del río, afectando así a las comunidades cercanas.
           </p>
           <div className="buttonToDonate">
           <CustomButton color="btn-white" textColor="text-green-button" text={"Donar"} linkTo={"/donate"}/>
@@ -54,12 +55,8 @@ function Home() {
         </div>
         <div className="container-text_button text-black">
           <p className="w-75">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-            justo nisi. Nullam metus eros, dignissim in rutrum nec, egestas ac
-            tellus. Fusce feugiat, dui in pulvinar pretium, orci nisi mollis
-            dolor, sed pharetra odio lacus a tellus. Maecenas vel hendrerit
-            lorem, nec tempus neque. Curabitur ligula magna, rutrum id maximus
-            ut, sagittis a tortor. Aliquam erat.
+            Nuestro objetivo es rescatar el cauce del Río Lagarto y revertir el daño ambiental causado por la tala, la contaminación y la extracción minera
+            mediante una inversión sin fines de lucro dedicada a su restauración.
           </p>
           <div className="container-button-whoWeAre">
            <CustomButton color="custom-button-green" textColor="text-white" text={"Ver más"} linkTo={"/about-us"}/>
@@ -74,8 +71,7 @@ function Home() {
           <h4 className="subtitle poppins-light">
           ¿Por qué debe importarnos?
           </h4>
-          <p className="problematica-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed ac justo nisi. Nullam metus eros, dignissim in rutrum.</p>
+          <p className="problematica-text">Rescatar el cauce del río y detener la tala indiscriminada es vital para proteger la biodiversidad, el equilibrio climático y el acceso al agua para las comunidades locales.</p>
             <div className="container-button-whoWeAre problematica-button">
             <CustomButton color="custom-button-green" textColor="text-white" text={"Ver más"} linkTo={"/about-us"}/>
           </div>
@@ -100,7 +96,7 @@ function Home() {
             <span>Provincia:</span>  Puntarenas
             </h4>
             <h4 className="poppins-light">
-            <span>Extensión:</span> 34km
+            <span>Extensión:</span> 46km
             </h4>
           </div>
           <img src={plantitas} className="align-self-center"/>

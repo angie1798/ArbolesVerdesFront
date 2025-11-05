@@ -463,11 +463,18 @@ p{
   padding-left: 24px;
   max-width: 500px;
   width: 100%;
+  size: 16px;
 }
 
 .pajaros-img{
   width: 100%;
   margin-top: 24px;
+}
+
+/*pagina sobre nosotros*/
+.div-fundadores{
+height: 591px;
+background-color: #135A44;
 }
 
 /*inicio de web*/
