@@ -1,9 +1,10 @@
-import ContactUs from "../components/contact-us";
 import "../styles/style.css";
-import pajaros from "../img/pajaros.png";
-import plantitaReal from "../img/plantita_real.png";
+import personasDeColor from "../img/personas de color y blanca.png";
+import bichitoIzq from "../img/bichito izq.png";
+import bichitoDer from "../img/bichito der.png";
+import tree from "../img/tree.png";
 
-function AboutUs (){
+function AboutUs() {
   return (
     <div className="home">
       {/**Inicio sección 1 */}
@@ -16,65 +17,95 @@ function AboutUs (){
               ¿Quiénes somos?
             </h3>
             <p>
-              Somos una empresa privada sin fines de lucro, conformada por vecinos de la ribera norte del río Lagarto. Hemos realizado inversiones propias en diversas labores de limpieza y en la recolección de semillas de árboles nativos. Actualmente, trabajamos en la producción de especies arbóreas que se encuentran en peligro de extinción o en riesgo de desaparecer de la región.
+              Somos una empresa privada sin fines de lucro, conformada por
+              vecinos de la ribera norte del río Lagarto. Hemos realizado
+              inversiones propias en diversas labores de limpieza y en la
+              recolección de semillas de árboles nativos. Actualmente,
+              trabajamos en la producción de especies arbóreas que se encuentran
+              en peligro de extinción o en riesgo de desaparecer de la región.
             </p>
           </div>
         </div>
         <div className="container-right">
           <div className="circle-gradient">
-            <img src={plantitaReal} />
+            <img src={personasDeColor} />
           </div>
         </div>
       </div>
       {/**Final sección 1 */}
+
       {/**Inicio sección 2 */}
-      <div className="como-donar d-flex">
-        <div className="container-left justify-content-start">
-          <div className=" alineacion-texto-left">
-            <h3 className="outfit-semibold text-green bigger-title">
+      <div className="d-flex background-beige">
+        <div className="justify-content-md-center centrar">
+          <div className="alineacion-texto-center">
+            <h3 className="outfit-semibold text-green bigger-title text-center">
               NUESTRO TRABAJO
             </h3>
             <p className="roboto-regular">
-              Nuestro proyecto de restauración del cauce del Río Lagarto, con una duración estimada de 15 años, requiere el apoyo urgente para adquirir maquinaria pesada fundamental para su ejecución. Actualmente contamos con una retroexcavadora y una vagoneta, pero necesitamos: 2 retroexcavadoras adicionales, 1 chapulín, 2 vagonetas adicionales y 1 vehículo doble tracción tipo pick-up.
+              Nuestro proyecto de restauración del cauce del Río Lagarto, con
+              una duración estimada de 15 años, requiere el apoyo urgente para
+              adquirir maquinaria pesada fundamental para su ejecución.
+              Actualmente contamos con una retroexcavadora y una vagoneta, pero
+              necesitamos: 2 retroexcavadoras adicionales, 1 chapulín, 2
+              vagonetas adicionales y 1 vehículo doble tracción tipo pick-up.
             </p>
             <p className="roboto-regular">
-             Además, disponemos de un equipo de 25 trabajadores durante las temporadas, y contamos con el valioso apoyo de voluntarios de las comunidades locales en tareas como la selección, producción y cuidado de viveros de árboles nativos. Agradecemos cualquier donación o apoyo que nos permita avanzar en esta causa ambiental.
+              Además, disponemos de un equipo de 25 trabajadores durante las
+              temporadas, y contamos con el valioso apoyo de voluntarios de las
+              comunidades locales en tareas como la selección, producción y
+              cuidado de viveros de árboles nativos. Agradecemos cualquier
+              donación o apoyo que nos permita avanzar en esta causa ambiental.
             </p>
           </div>
         </div>
-        <div className="container-right">
-          <img className="pajaros-img" src={pajaros} />
-        </div>
       </div>
       {/**Final sección 2 */}
-      {/**Inicio sección 3 */}
-      <div className="div-fundadores">
-        <div className="row">
-            <h3 className="poppins-regular text-white">
-              Fundadores
-            </h3>
-            <h3 className="poppins-light text-white">
-              Conócenos
-            </h3>
-            <div className="col-4">
 
-            </div>
-            <div className="col-4">
+      {/**Inicio sección 3 */}
+      <div className="div-fundadores d-flex flex-column">
+        <div className="row">
+          <h3 className="poppins-regular text-white">Fundadores</h3>
+          <h3 className="poppins-light text-white">Conócenos</h3>
+        </div>
+        <div className="row">
+          <div className="col-4"></div>
+
+          <div className="col-4">
+            <div className="row">
+              <div className="col-6 d-flex flex-row-reverse">
+                <img src={tree} />
+              </div>
+              <div className="col-6">
                 <h3 className="poppins-regular text-white">
-              Eduardo Morales Meza
-            </h3>
-            <h3 className="poppins-light text-white">
-              Abogado
-            </h3>
+                  Eduardo Morales Meza
+                </h3>
+                <h3 className="poppins-light text-white">Abogado</h3>
+              </div>
             </div>
-            <div className="col-4">
+            <p className="text-white d-flex align-items-center justify-content-center mt-5">
+              Abogado de profesión.
+            </p>
+          </div>
+          <div className="col-4">
+            <div className="row">
+              <div className="col-4 d-flex flex-row-reverse">
+                <img src={tree} />
+              </div>
+              <div className="col-8">
                 <h3 className="poppins-regular text-white">
-              Celso Arguedas Sanchez
-            </h3>
-            <h3 className="poppins-light text-white">
-              Agricultor, ganadero y comerciante
-            </h3>
+                  Celso Arguedas Sanchez
+                </h3>
+                <h3 className="poppins-light text-white">
+                  Agricultor, ganadero y comerciante
+                </h3>
+              </div>
             </div>
+            <p className="text-white d-flex text-end justify-content-center mt-5">
+              Propietario de la finca en la cual se está construyendo el vivero,
+              en el cual se están seleccionando los árboles nativos que se
+              sembrarán a las orillas del río.
+            </p>
+          </div>
         </div>
       </div>
       {/**Final sección 3 */}

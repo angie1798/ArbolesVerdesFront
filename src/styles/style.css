@@ -409,12 +409,21 @@ p{
   padding-left: 24px;
   align-content: start;
 }
+.alineacion-texto-center{
+  max-width: 787px;
+  width: 100%;
+  padding-top: 24px;
+  align-content: center;
+}
 .alineacion-texto-left>h4{
   margin-left:0;
 }
-.alineacion-texto-left>p{
+.alineacion-texto-left>p, .alineacion-texto-center>p{
   margin-top: 24px;
   margin-bottom: 52px;
+}
+.centrar{
+  margin: 0 auto;
 }
 .container-seccion1-donar{
   min-height: 419px;
@@ -475,8 +484,22 @@ p{
 .div-fundadores{
 height: 591px;
 background-color: #135A44;
+padding-right:70px;
 }
 
+.background-beige{
+min-height: 475px;
+background-color: #FFF7E3;
+padding-top:70px;
+}
+
+.bichitos{
+
+}
+.bichitos>img{
+  margin-right:36px;
+  margin-left:36px;
+}
 /*inicio de web*/
 @media (min-width:1200px) {
   .navbar-custom-background >.a{
@@ -815,6 +838,7 @@ background-color: #135A44;
   .circle-gradient{
     margin-top: 24px;
     margin-bottom: 24px;
+    margin-left:80px;
   }
   .background-abstract{
     background-image: url("../img/abstract.png");
@@ -826,9 +850,8 @@ background-color: #135A44;
     margin-right: 30px;
   }
   .container-section1-texts{
-    width:408px;
+    width:568px;
     margin-top:114px;
-  
   }
   .imagen-pajaros{
     margin-left:110px;
