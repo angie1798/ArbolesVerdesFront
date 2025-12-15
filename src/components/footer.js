@@ -52,7 +52,7 @@ return(
         </Container>
         <Container className="d-flex justify-content-center container-fluid m-0 p-0">
           <div className="footer-copyright roboto-light">
-          © 2024 Derechos Reservados Sembrando Arboles Verdes Nativos de Costa Rica Sociedad Anónima.
+          © 2024 Derechos Reservados Sembrando Árboles Verdes Nativos de Costa Rica Sociedad Anónima.
           </div>
         </Container>
       </Navbar>

@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*inicio de estilos generales*/
 body {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-p{
+p {
   margin-bottom: 0;
 }
 .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 .roboto-light {
   font-family: "Roboto", sans-serif;
@@ -30,10 +30,10 @@ p{
   font-style: normal;
 }
 .poppins-medium {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
 .outfit-semibold {
   font-family: "Outfit", sans-serif;
@@ -46,61 +46,70 @@ p{
   font-weight: 700;
   font-style: normal;
 }
-.text-white{
-  color:white;
+.text-white {
+  color: white;
 }
-.text-black{
-  color:black;
+.text-black {
+  color: black;
 }
-.text-green{
-  color: #135A44;
+.text-green {
+  color: #135a44;
 }
-.text-green-button{
+.text-green-button {
   color: #064402;
 }
-.text-beige{
-  color:#B1A17F;
+.text-beige {
+  color: #b1a17f;
 }
-.fontSize-16{
-  font-size:16px;
+.fontSize-16 {
+  font-size: 16px;
+}
+.fontSize-22 {
+  font-size: 22px;
+}
+.fontSize-25 {
+  font-size: 25px;
+}
+.fontSize-26 {
+  font-size: 26px;
 }
 /*fin de estilos generales*/
 
-.navbar-custom-background >.a{
+.navbar-custom-background > .a {
   padding-left: 0px;
-  margin-left:72px;
+  margin-left: 72px;
 }
-.navbar-custom-background >.b{
+.navbar-custom-background > .b {
   padding-right: 0px;
-  margin-right:72px;
-} 
-
-.buttonToDonate{
-  width:185px;
+  margin-right: 72px;
 }
-.buttonToDonate>button>div{
-  color: #135A44;
+
+.buttonToDonate {
+  width: 185px;
+}
+.buttonToDonate > button > div {
+  color: #135a44;
 }
 /************/
 .nav-custom-container {
   position: absolute;
   top: 0;
 }
-.navbar-custom-background-home{
+.navbar-custom-background-home {
   background: none !important;
 }
 .navbar-custom-background > .a {
-  margin:0;
-  width:50%;
-  padding-left:16px;
+  margin: 0;
+  width: 50%;
+  padding-left: 16px;
 }
 .navbar-custom-background > .b {
-  margin:0;
-  width:50%;
-  padding-left:16px;
-  justify-content:end;
-  font-size:16px;
-  padding-right:16px;
+  margin: 0;
+  width: 50%;
+  padding-left: 16px;
+  justify-content: end;
+  font-size: 16px;
+  padding-right: 16px;
 }
 .navbar-brand {
   font-size: 25px;
@@ -112,25 +121,28 @@ p{
   color: white;
 }
 .navbar-text-home-brand {
-    color: white;
-  }
-  .navbar-text-home-brand:hover, .navbar-text-home-brand:active {
-    color: white !important;
-  }
+  color: white;
+}
+.navbar-text-home-brand:hover,
+.navbar-text-home-brand:active {
+  color: white !important;
+}
 .navbar-text-color-brand {
-    color: #4a4a4a;
-  }
-  .navbar-text-color-brand:hover, .navbar-text-color-brand:active{
-    color: #4a4a4a !important;
-  }
+  color: #4a4a4a;
+}
+.navbar-text-color-brand:hover,
+.navbar-text-color-brand:active {
+  color: #4a4a4a !important;
+}
 
 .navbar-text-home:hover {
-    color: white;
-    border-bottom: 0.125rem solid #b1a17f !important;
+  color: white;
+  border-bottom: 0.125rem solid #b1a17f !important;
 }
-.navbar-text-home:active, .navbar-text-home:focus {
-    color: white !important;
-    border-bottom: 0.125rem solid #b1a17f !important;
+.navbar-text-home:active,
+.navbar-text-home:focus {
+  color: white !important;
+  border-bottom: 0.125rem solid #b1a17f !important;
 }
 
 .navbar-text-color {
@@ -139,17 +151,18 @@ p{
 .navbar-text-color:hover {
   color: #b1a17f;
 }
-.navbar-text-color:active, .navbar-text-color:focus{
-    color: #b1a17f !important;
+.navbar-text-color:active,
+.navbar-text-color:focus {
+  color: #b1a17f !important;
 }
 
-.item-selected{
-    border-bottom: 0.125rem solid #b1a17f !important;
-    color: #b1a17f;
+.item-selected {
+  border-bottom: 0.125rem solid #b1a17f !important;
+  color: #b1a17f;
 }
-.welcome-selected{
-    border-bottom: 0.125rem solid #b1a17f !important;
-    color: white;
+.welcome-selected {
+  border-bottom: 0.125rem solid #b1a17f !important;
+  color: white;
 }
 
 .container-right,
@@ -158,10 +171,26 @@ p{
   align-content: center;
 }
 
+.justify-self-center {
+  justify-self: center !important;
+}
+
+.container-60 {
+  width: 60%;
+  align-content: center;
+}
+.container-40 {
+  width: 40%;
+  align-content: center;
+}
+.min-755 {
+  min-width: 755px;
+}
+
 /* Fin estilos del Nav y generales  */
 
-.home{
-  padding-top:100px;
+.home {
+  padding-top: 100px;
 }
 
 .header-imagen {
@@ -170,140 +199,141 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
-  flex-direction:column;
+  flex-direction: column;
   padding-top: 120px;
   padding-left: 24px;
 }
 
-.footer-style{
-  background-color:#B1A17F !important;
+.footer-style {
+  background-color: #b1a17f !important;
   color: white;
 }
-.footer-style>.container>.brand-footer{
-  font-size:20px;
-  align-self:center;
+.footer-style > .container > .brand-footer {
+  font-size: 20px;
+  align-self: center;
 }
 
-.nav-footer{
-  font-size:14px;
-  margin-top:5px;
+.nav-footer-text-color {
+  color: white;
 }
-.nav-footer-text-color{
-  color:white;
-}
-.nav-footer-text-color:hover, .nav-footer-text-color:active, .nav-footer-text-color:focus{
-  color:white !important;
+.nav-footer-text-color:hover,
+.nav-footer-text-color:active,
+.nav-footer-text-color:focus {
+  color: white !important;
 }
 
-.footer-line{
-  margin-top:15px;
-  border-top: 1px #E5D09C solid;
-  width:100%;
+.footer-line {
+  margin-top: 15px;
+  border-top: 1px #e5d09c solid;
+  width: 100%;
 }
-.footer-copyright{
-  margin-top:10px;
-  font-size:14px;
-  text-align:center;
+.footer-copyright {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
 }
 
-.banner{
-  width:250px;
-  color:white;
+.banner {
+  width: 250px;
+  color: white;
   font-size: 30px;
 }
 
-.textArrowButton{
+.textArrowButton {
   height: 16px;
   line-height: normal;
 }
 
-.arrow{
+.arrow {
   height: 16px;
 }
-.arrow>svg{
+.arrow > svg {
   vertical-align: baseline;
 }
 
-.whoWeAre-banner{
-  display:flex;
-  width:100%;
-  min-height:445px;
-  flex-direction:column;
+.whoWeAre-banner {
+  display: flex;
+  width: 100%;
+  min-height: 445px;
+  flex-direction: column;
 }
-.container-whoWeAre{
-  width:100%;
+.container-whoWeAre {
+  width: 100%;
 }
-.title-container{
+.title-container {
   margin-top: 52px;
 }
-.title{
-  color: #2F715C;
+.title {
+  color: #2f715c;
   font-size: 25px;
-  margin-left:24px;
+  margin-left: 24px;
 }
-.subtitle{
-  color: #8E6818;
+.subtitle {
+  color: #8e6818;
   font-size: 22px;
-  margin-left:24px;
+  margin-left: 24px;
 }
 
-.max-title{
-  font-size:35px;
+.max-title {
+  font-size: 35px;
 }
-.bigger-title{
-  font-size:30px;
+.bigger-title {
+  font-size: 30px;
 }
-.arbolitos-forms{
-  border-bottom: dashed #E5D09C 1px;
+.arbolitos-forms {
+  border-bottom: dashed #e5d09c 1px;
   margin-top: 32px;
-  margin-bottom:24px;
+  margin-bottom: 24px;
 }
 
-.container-text_button{
+.container-text_button {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left:24px;
-  padding-bottom:32px;
+  padding-left: 24px;
+  padding-bottom: 32px;
 }
-.custom-button{
-  width:185px;
+.custom-button {
+  width: 185px;
   margin-top: 31px;
 }
 
-.custom-button>a{
-  text-decoration:none;
+.custom-button > a {
+  text-decoration: none;
 }
-.custom-button>a>button{
-  text-decoration:none;
+.custom-button > a > button {
+  text-decoration: none;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-right: 17px;
 }
 
-.custom-button-green:hover{
-  color:white;
-  background-color:#044430 !important;
+.custom-button-green:hover {
+  color: white;
+  background-color: #044430 !important;
 }
 
-.custom-button-green, .custom-button-green:focus, .custom-button-green:active{
-  background-color: #135A44 !important;
+.custom-button-green,
+.custom-button-green:focus,
+.custom-button-green:active {
+  background-color: #135a44 !important;
 }
 
-.btn-white:hover{
-  background-color:#DCF3EC;
+.btn-white:hover {
+  background-color: #dcf3ec;
 }
 
-.btn-white, .btn-white:focus, .btn-white:active{
-  background-color:white;
-
+.btn-white,
+.btn-white:focus,
+.btn-white:active {
+  background-color: white;
 }
 
-.container-principal{
-  display:flex;
-  width:100%;
-  flex-direction:column;
+.container-principal {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 .problematica {
@@ -312,140 +342,155 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.problematica-text{
-  max-width:432px;
+.problematica-text {
+  max-width: 432px;
   margin-left: 24px;
   margin-top: 27px;
 }
 
-.problematica-button{
-  margin-left:24px;
+.problematica-button {
+  margin-left: 24px;
 }
 
-.container-ubicacion{
-  min-height:450px;
-  flex-direction:column;
+.container-ubicacion {
+  min-height: 450px;
+  flex-direction: column;
 }
 
-.bbb{
-  max-height:293px;
-  width:100%;
-}
-.bbb>img{
-  width:100%;
-}
-.ccc{
-  width:100%;
-  text-align:center;
-}
-
-.title-ubicacion{
-  color:#135A44;
+.title-ubicacion {
+  color: #135a44;
   font-size: 25px;
   margin-top: 48px;
-  margin-bottom:20px;
-  display:flex;
-  justify-content:center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
-.text-ubicacion{
+.text-ubicacion {
   margin-top: 52px;
-  margin-bottom:32px;
+  margin-bottom: 32px;
 }
-.text-ubicacion>h4{
-  font-size:22px;
+.text-ubicacion > h4 {
+  font-size: 22px;
 }
-.text-ubicacion>h4>span{
-  color: #8E6818;
+.text-ubicacion > h4 > span {
+  color: #8e6818;
 }
-.container-donar{
+.container-donar {
   background-image: url("../img/CallToAction.png");
   min-height: 239px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.container-donar>h4{
-  padding-left:24px;
-  padding-top:54px;
-  margin-botton:25px;
+.container-donar > h4 {
+  padding-left: 24px;
+  padding-top: 54px;
+  margin-botton: 25px;
 }
 
-.container-contact{
-  width:100%;
-  min-height:511px;
-  flex-direction:column;
+.container-contact {
+  width: 100%;
+  min-height: 511px;
+  flex-direction: column;
 }
-.text-contact{
-  padding-top:48px;
+.text-contact {
+  padding-top: 48px;
 }
-.img-contact{
-  margin-top:83px;
-  width:100%;
-}
-.container-form{
-  width:100%;
-  max-width:433px;
+.container-form {
+  width: 100%;
+  max-width: 433px;
   border-radius: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 48px 39px 23px 39px ;
+  padding: 48px 39px 23px 39px;
 }
-.space-between-form{
-  margin-bottom:28px !important;
+.space-between-form {
+  margin-bottom: 28px !important;
 }
 
-.como-donar{
+.como-donar {
   background-image: url("../img/Problematica_donar.png");
-  width:100%;
+  width: 100%;
   min-height: 446px;
   background-repeat: no-repeat;
   background-size: auto;
   flex-direction: column;
 }
 
-.alineacion-texto-left{
+.alineacion-texto-left {
   max-width: 432px;
   width: 100%;
   padding-top: 24px;
-  padding-left: 24px;
+  margin-left: 140px;
   align-content: start;
 }
-.alineacion-texto-center{
+.alineacion-texto-center {
   max-width: 787px;
   width: 100%;
   padding-top: 24px;
   align-content: center;
 }
-.alineacion-texto-left>h4{
-  margin-left:0;
+.alineacion-texto-left > h4 {
+  margin-left: 0;
 }
-.alineacion-texto-left>p, .alineacion-texto-center>p{
-  margin-top: 24px;
-  margin-bottom: 52px;
+.alineacion-texto-left > p {
+  margin-top: 26px;
+  margin-bottom: 64px;
 }
-.centrar{
+.trabajo-texto-top {
+  text-align: center;
+  margin-top: 73px;
+}
+.trabajo-texto-bottom {
+  text-align: center;
+  margin-top: 37px;
+}
+.centrar {
   margin: 0 auto;
 }
-.container-seccion1-donar{
+.container-seccion1-donar {
   min-height: 419px;
   flex-direction: column;
 }
-.container-section1-texts>p{
-  margin-top:24px;
+.container-section1-texts > p {
+  margin-top: 24px;
 }
-.circle-gradient{
-  background: radial-gradient(circle farthest-side at 50% 50%, rgba(225, 202, 145, 1) 0%, rgba(255, 255, 255, 1) 100%);
+.circle-gradient,
+.circle-gradient-no-border {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 80px;
+}
+.circle-gradient {
+  background: radial-gradient(
+    circle farthest-side at 50% 50%,
+    rgba(225, 202, 145, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
   width: 100%;
   height: 100%;
   max-height: 467px;
   max-width: 467px;
-  border-radius:60%;
+  border-radius: 60%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 24px;
   margin-bottom: 24px;
 }
-.background-abstract{
+.circle-gradient-no-border {
+  width: 100%;
+  height: 100%;
+  max-height: 453px;
+  max-width: 453px;
+  border-radius: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 0px;
+}
+.background-abstract {
   background-image: url("../img/abstract.png");
   height: 219px;
   width: 183px;
@@ -454,420 +499,586 @@ p{
   margin-top: 24px;
   margin-right: 30px;
 }
-.container-section1-texts{
-  width: 408px;
-  margin-top: 24px;
-
+.imagen-pajaros {
+  margin-left: 110px;
 }
-.imagen-pajaros{
-  margin-left:110px;
-}
-.iconos-donacion{
-  width:24px;
-  height:24px;
-  margin-right:5px;
+.iconos-donacion {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
 }
 
-.iconos-donacion-container{
-  padding-left: 24px;
-  max-width: 500px;
+.iconos-donacion-container {
+  padding-left: 0px;
+  max-width: 546px;
   width: 100%;
   size: 16px;
+  margin-left: 138px;
 }
 
-.pajaros-img{
+.pajaros-img {
   width: 100%;
   margin-top: 24px;
 }
 
 /*pagina sobre nosotros*/
-.div-fundadores{
-height: 591px;
-background-color: #135A44;
-padding-right:70px;
+.item-superior {
+  z-index: 1;
+}
+.item-inferior {
+  position: relative;
+  margin-top: -114px;
+}
+.div-fundadores {
+  height: 591px;
+  background-color: #135a44;
+  padding-right: 70px;
+  padding-bottom: 121px;
+}
+.background-beige {
+  background-color: #fff7e3;
+  min-height: 475px;
+  padding-top: 70px;
+  background-image: url("../img/fondo con bichitos.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.titulos {
+  margin: 74px 0 110px 140px;
+}
+.fundador {
+  width: 220px;
 }
 
-.background-beige{
-min-height: 475px;
-background-color: #FFF7E3;
-padding-top:70px;
+.tree-icon {
+  width: 56px;
+  height: 76px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-.bichitos{
-
+.long-desc {
+  width: 310px;
 }
-.bichitos>img{
-  margin-right:36px;
-  margin-left:36px;
-}
-/*inicio de web*/
-@media (min-width:1200px) {
-  .navbar-custom-background >.a{
-    padding-left: 0px;
-    margin-left:72px;
-  }
-  .navbar-custom-background >.b{
-    padding-right: 0px;
-    margin-right:72px;
-  } 
-  .footer-style>.container>.brand-footer{
-    margin-top:50px;
-    font-size:25px;
-  }
-  .navbar-brand {
-    font-size: 30px;
-  }
-  .nav-footer{
-    font-size:16px;
-    margin-top:10px;
-  }
-  .footer-copyright{
-    font-size:16px;
-  }
-  .banner{
-    width:332px;
-    color:white;
-    font-size: 45px;
-    margin-left: 72px;
-  }
-  .buttonToDonate{
-    width:185px;
-  }
-  .buttonToDonate>button>div{
-    color: #135A44;
-  }
 
-   .nav-custom-container {
-    position: absolute;
-    top: 0;
-  } 
-   .navbar-custom-background-home{
-    background: none !important;
-  } 
+/* pagina problematica */
+.bg-beige {
+  background-color: #fff7e3;
+}
+.primera-seccion {
+  padding-top: 96px;
+  min-height: 475px;
+}
+.segunda-seccion {
+  min-height: 1286px;
+  background-image: url("../img/caminito.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  margin-top: -162px;
+  margin-bottom: -64px;
+}
+.tercera-seccion {
+  min-height: 365px;
+  background-image: url("../img/pajarito y mariposas.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.texto-principal {
+  width: 601px;
+}
+
+.navbar-custom-background > .a {
+  padding-left: 0px;
+  margin-left: 72px;
+}
+.navbar-custom-background > .b {
+  padding-right: 0px;
+  margin-right: 72px;
+}
+.footer-style > .container > .brand-footer {
+  margin-top: 50px;
+  font-size: 25px;
+}
+.navbar-brand {
+  font-size: 30px;
+}
+.nav-footer {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.footer-copyright {
+  font-size: 16px;
+}
+.banner {
+  width: 332px;
+  color: white;
+  font-size: 45px;
+  margin-left: 72px;
+}
+.buttonToDonate > button > div {
+  color: #135a44;
+}
+
+.nav-custom-container {
+  position: absolute;
+  top: 0;
+}
+.navbar-custom-background-home {
+  background: none !important;
+}
+.navbar-custom-background > .a {
+  margin: 0;
+  width: 50%;
+  padding-left: 16px;
+}
+.navbar-custom-background > .b {
+  margin: 0;
+  width: 50%;
+  padding-left: 16px;
+  justify-content: end;
+  font-size: 16px;
+  margin-right: 16px;
+}
+#basic-navbar-nav {
+  justify-content: end;
+}
+.navbar-text-home {
+  color: white;
+}
+.navbar-text-home-brand {
+  color: white;
+}
+.navbar-text-home-brand:hover,
+.navbar-text-home-brand:active {
+  color: white !important;
+}
+.navbar-text-color-brand {
+  color: #4a4a4a;
+}
+.navbar-text-color-brand:hover,
+.navbar-text-color-brand:active {
+  color: #4a4a4a !important;
+}
+
+.navbar-text-home:hover {
+  color: white;
+  border-bottom: 0.125rem solid #b1a17f !important;
+}
+.navbar-text-home:active,
+.navbar-text-home:focus {
+  color: white !important;
+  border-bottom: 0.125rem solid #b1a17f !important;
+}
+
+.navbar-text-color {
+  color: #4a4a4a;
+}
+.navbar-text-color:hover {
+  color: #b1a17f;
+}
+.navbar-text-color:active,
+.navbar-text-color:focus {
+  color: #b1a17f !important;
+}
+
+.item-selected {
+  border-bottom: 0.125rem solid #b1a17f !important;
+  color: #b1a17f;
+}
+.welcome-selected {
+  border-bottom: 0.125rem solid #b1a17f !important;
+  color: white;
+}
+
+/* Fin estilos del Nav y generales  */
+
+.home {
+  padding-top: 100px;
+}
+
+.header-imagen {
+  background-image: url("../img/fondo_arbolesverdes.jpg");
+  min-height: 599px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+  flex-direction: row;
+  padding-top: 0px;
+  padding-left: 0px;
+}
+
+.footer-style {
+  background-color: #b1a17f !important;
+  color: white;
+}
+
+.nav-footer-text-color {
+  color: white;
+}
+.nav-footer-text-color:hover,
+.nav-footer-text-color:active,
+.nav-footer-text-color:focus {
+  color: white !important;
+}
+
+.footer-line {
+  margin-top: 15px;
+  border-top: 1px #e5d09c solid;
+  width: 100%;
+}
+
+.textArrowButton {
+  height: 16px;
+  line-height: normal;
+}
+
+.arrow {
+  height: 16px;
+}
+.arrow > svg {
+  vertical-align: baseline;
+}
+
+.whoWeAre-banner {
+  display: flex;
+  width: 100%;
+  height: 445px;
+  flex-direction: row;
+}
+.container-whoWeAre {
+  width: 50%;
+}
+.title-container {
+  margin-top: 90px;
+}
+.title {
+  color: #2f715c;
+  font-size: 25px;
+  margin-left: 140px;
+}
+.subtitle {
+  color: #8e6818;
+  font-size: 22px;
+  margin-left: 140px;
+}
+
+.max-title {
+  font-size: 35px;
+}
+.bigger-title {
+  font-size: 30px;
+}
+.arbolitos-forms {
+  border-bottom: dashed #e5d09c 1px;
+  margin-top: 108px;
+  text-align: end;
+  margin-right: 180px;
+  padding-right: 44px;
+}
+
+.container-text_button {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.custom-button {
+  width: 185px;
+  margin-top: 31px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.custom-button > a {
+  text-decoration: none;
+}
+.custom-button > a > button {
+  text-decoration: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 17px;
+}
+
+.container-principal {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.problematica {
+  background-image: url("../img/Problematica.png");
+  min-height: 447px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.problematica-text {
+  max-width: 432px;
+  margin-left: 140px;
+  margin-top: 27px;
+}
+
+.problematica-button {
+  margin-left: 140px;
+}
+.deforestacion-button {
+  margin-left: 124px;
+}
+
+.container-ubicacion {
+  min-height: 450px;
+  flex-direction: row;
+}
+
+.bbb {
+  max-height: 293px;
+  width: 70%;
+}
+.bbb > img {
+  width: 701px;
+}
+.ccc {
+  width: 30%;
+  text-align: initial;
+}
+
+.title-ubicacion {
+  color: #135a44;
+  font-size: 25px;
+  margin-top: 85px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.text-ubicacion {
+  margin-top: 92px;
+  margin-bottom: 52px;
+}
+.text-ubicacion > h4 {
+  font-size: 22px;
+}
+.text-ubicacion > h4 > span {
+  color: #8e6818;
+}
+.container-donar {
+  background-image: url("../img/CallToAction.png");
+  min-height: 239px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-donar > h4 {
+  padding-left: 124px;
+  padding-top: 54px;
+  margin-botton: 25px;
+}
+
+.container-contact {
+  padding-top: 75px;
+  flex-direction: row;
+}
+.text-contact {
+  padding-top: 48px;
+}
+.img-contact {
+  margin-top: 83px;
+  width: auto;
+}
+.container-form {
+  border-radius: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 48px 39px 23px 39px;
+}
+.space-between-form {
+  margin-bottom: 28px !important;
+}
+
+.como-donar {
+  background-image: url("../img/Problematica_donar.png");
+  width: 100%;
+  min-height: 446px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-direction: row;
+}
+.container-seccion1-donar {
+  flex-direction: row;
+}
+.container-section1-texts > p {
+  margin-top: 24px;
+}
+.background-abstract {
+  background-image: url("../img/abstract.png");
+  height: 219px;
+  width: 183px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 114px;
+  margin-right: 30px;
+}
+.container-section1-texts {
+  width: 601px;
+  margin-top: 64px;
+}
+.imagen-pajaros {
+  margin-left: 110px;
+}
+.iconos-donacion {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.pajaros-img {
+  width: auto;
+}
+
+/* ----- pagina history*/
+.pecesitos {
+  width: 100%;
+}
+.seccion {
+  width: 750px;
+  justify-self: center;
+  padding-top: 100px;
+}
+.subseccion {
+  width: 750px;
+  align-self: center;
+  margin-left: 32px;
+}
+
+.titulo-proble {
+  margin-top: 111px;
+  margin-bottom: 117px;
+}
+
+.agua-texto {
+  margin-bottom: 11px;
+}
+
+.titulo-solu {
+  margin-top: 83px;
+  margin-bottom: 52px;
+}
+
+.titulo-reforestacion {
+  margin-bottom: 21px;
+}
+
+.plantita-texto {
+  margin-top: 17px;
+  margin-left: 8px;
+  margin-bottom: 59px;
+}
+
+.linea-con-arbusto {
+  height: 107px;
+}
+
+.especie-grupo {
+  padding-left: 16px;
+}
+
+.especie-titulo {
+  font-size: 25px;
+  margin-top: 11px;
+  margin-bottom: 23px;
+}
+
+.cause-texto {
+  margin-bottom: 21px;
+}
+
+.como-texto {
+  margin-bottom: 36px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  /* Inicio */
+  .nav-custom-container {
+    display: flex;
+    flex-direction: row;
+  }
   .navbar-custom-background > .a {
-    margin:0;
-    width:50%;
-    padding-left:16px;
+    width: 70%;
   }
   .navbar-custom-background > .b {
-    margin:0;
-    width:50%;
-    padding-left:16px;
-    justify-content:end;
-    font-size:16px;
-    margin-right:16px;
+    width: 20%;
   }
-  #basic-navbar-nav {
-    justify-content: end;
-  }
-  .navbar-text-home {
-    color: white;
-  }
-  .navbar-text-home-brand {
-      color: white;
-    }
-    .navbar-text-home-brand:hover, .navbar-text-home-brand:active {
-      color: white !important;
-    }
-  .navbar-text-color-brand {
-      color: #4a4a4a;
-    }
-    .navbar-text-color-brand:hover, .navbar-text-color-brand:active{
-      color: #4a4a4a !important;
-    }
-  
-  .navbar-text-home:hover {
-      color: white;
-      border-bottom: 0.125rem solid #b1a17f !important;
-  }
-  .navbar-text-home:active, .navbar-text-home:focus {
-      color: white !important;
-      border-bottom: 0.125rem solid #b1a17f !important;
-  }
-  
-  .navbar-text-color {
-    color: #4a4a4a;
-  }
-  .navbar-text-color:hover {
-    color: #b1a17f;
-  }
-  .navbar-text-color:active, .navbar-text-color:focus{
-      color: #b1a17f !important;
-  }
-  
-  .item-selected{
-      border-bottom: 0.125rem solid #b1a17f !important;
-      color: #b1a17f;
-  }
-  .welcome-selected{
-      border-bottom: 0.125rem solid #b1a17f !important;
-      color: white;
-  }
-  
-  .container-right,
-  .container-left {
-    width: 50%;
-    align-content: center;
-  }
-  
-  /* Fin estilos del Nav y generales  */
-  
-  .home{
-    padding-top:100px;
-  }
-  
   .header-imagen {
-    background-image: url("../img/fondo_arbolesverdes.jpg");
-    min-height: 599px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
-    flex-direction:row;
-    padding-top: 0px;
-    padding-left: 0px;
-  }
-  
-  .footer-style{
-    background-color:#B1A17F !important;
-    color: white;
-  }
-  
-  .nav-footer-text-color{
-    color:white;
-  }
-  .nav-footer-text-color:hover, .nav-footer-text-color:active, .nav-footer-text-color:focus{
-    color:white !important;
-  }
-  
-  .footer-line{
-    margin-top:15px;
-    border-top: 1px #E5D09C solid;
-    width:100%;
-  }
-  
-  .textArrowButton{
-    height: 16px;
-    line-height: normal;
-  }
-  
-  .arrow{
-    height: 16px;
-  }
-  .arrow>svg{
-    vertical-align: baseline;
-  }
-  
-  .whoWeAre-banner{
-    display:flex;
-    width:100%;
-    height:445px;
-    flex-direction:row;
-  
-  }
-  .container-whoWeAre{
-    width:50%;
-  }
-  .title-container{
-    margin-top: 90px;
-  }
-  .title{
-    color: #2F715C;
-    font-size: 25px;
-    margin-left:140px;
-  }
-  .subtitle{
-    color: #8E6818;
-    font-size: 22px;
-    margin-left:140px;
-  }
-  
-  .max-title{
-    font-size:35px;
-  }
-  .bigger-title{
-    font-size:30px;
-  }
-  .arbolitos-forms{
-    border-bottom: dashed #E5D09C 1px;
-    margin-top: 108px;
-    text-align: end;
-    margin-right: 180px;
-    padding-right: 44px;
-  }
-  
-  .container-text_button{
-    width: 50%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-  }
-  .custom-button{
-    width:185px;
-    margin-top: 31px;
-    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
-  }
-  
-  .custom-button>a{
-    text-decoration:none;
-  }
-  .custom-button>a>button{
-    text-decoration:none;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 17px;
-  }
-  
-  .container-principal{
-    display:flex;
-    width:100%;
-    flex-direction:row;
-  }
-  
-  .problematica {
-    background-image: url("../img/Problematica.png");
-    min-height: 447px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .problematica-text{
-    max-width:432px;
-    margin-left: 140px;
-    margin-top: 27px;
-  }
-  
-  .problematica-button{
-    margin-left:140px;
-  }
-  .deforestacion-button{
-    margin-left:124px;
-  }
-  
-  .container-ubicacion{
-    min-height:450px;
-    flex-direction:row;
-  }
-  
-  .bbb{
-    max-height:293px;
-    width:70%;
-  }
-  .bbb>img{
-    width:701px;
-  }
-  .ccc{
-    width:30%;
-    text-align:initial;
-  }
-  
-  .title-ubicacion{
-    color:#135A44;
-    font-size: 25px;
-    margin-top: 85px;
-    margin-bottom:20px;
-    display:flex;
-    justify-content:center;
-  }
-  .text-ubicacion{
-    margin-top: 92px;
-    margin-bottom:52px;
-  }
-  .text-ubicacion>h4{
-    font-size:22px;
-  }
-  .text-ubicacion>h4>span{
-    color: #8E6818;
-  }
-  .container-donar{
-    background-image: url("../img/CallToAction.png");
-    min-height: 239px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .container-donar>h4{
-    padding-left:124px;
-    padding-top:54px;
-    margin-botton:25px;
-  }
-  
-  .container-contact{
-    padding-top:75px;
-    flex-direction:row;
-  }
-  .text-contact{
-    padding-top:48px;
-  }
-  .img-contact{
-    margin-top:83px;
-    width: auto;
-  }
-  .container-form{
-    border-radius: 30px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 48px 39px 23px 39px ;
-  }
-  .space-between-form{
-    margin-bottom:28px !important;
-  }
-  
-  .como-donar{
-    background-image: url("../img/Problematica_donar.png");
-    width:100%;
-    min-height: 446px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    flex-direction: row;
-  }
-  
-  .alineacion-texto-left{
-    padding-left: 140px;
-  }
-  .alineacion-texto-left>h4{
-    margin-left:0;
-  }
-  .alineacion-texto-left>p{
-    margin-top:26px;
-    margin-bottom:64px;
-  }
-  .container-seccion1-donar{
-    flex-direction: row;
-  }
-  .container-section1-texts>p{
-    margin-top:24px;
-  }
-  .circle-gradient{
-    margin-top: 24px;
-    margin-bottom: 24px;
-    margin-left:80px;
-  }
-  .background-abstract{
-    background-image: url("../img/abstract.png");
-    height: 219px;
-    width: 183px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-top: 114px;
-    margin-right: 30px;
-  }
-  .container-section1-texts{
-    width:568px;
-    margin-top:114px;
-  }
-  .imagen-pajaros{
-    margin-left:110px;
-  }
-  .iconos-donacion{
-    width:24px;
-    height:24px;
-    margin-right:5px;
-  }
-  
-  .iconos-donacion-container{
+    padding-top: 140px;
     padding-left: 0px;
-    margin-left: 138px;
   }
+  .banner {
+    margin: 0 auto;
+  }
+  .rio-text {
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+  .buttonToDonate {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .whoWeAre-banner {
+    height: auto;
+    flex-direction: column;
+  }
+  .container-whoWeAre {
+    width: 100%;
+  }
+  .container-text_button {
+    width: 100%;
+  }
+  .container-principal {
+   flex-direction: column;
+  }
+  .container-ubicacion {
+    flex-direction: column;
+  }
+  .bbb {
+    width: 100%;
+  }
+  .bbb > img {
+    width: 100%;
+  }
+  .ccc {
+    width: 100%;  
+  }
+  .container-contact {
+   flex-direction: column;
+  }
+  .img-contact {
+    width: 100%;
+  }
+  .nav-footer {
+    font-size: 14px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+  }
+  /* sobre nosotros */
 
-  .pajaros-img{
-    width: auto;
+  /* Donar  */
+
+  /* Problematica */
+  
+}
+@media screen and (min-width: 801px) and (max-width: 1366px) {
+  /* About us */
+  .circle-gradient {
+    margin-left: 56px;
+  }
+  /* Problematica */
+  .subseccion {
+    margin-left: 68px;
+  }
+  .titulo-solu {
+    margin-top: 60px;
+    margin-bottom: 46px;
+  }
+  .segunda-seccion {
+    margin-bottom: -120px;
   }
 }

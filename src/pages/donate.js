@@ -32,7 +32,7 @@ Cada aporte suma en la protección de este vital ecosistema que nos conecta con 
       {/**Final sección 1 */}
       {/**Inicio sección 2 */}
       <div className="como-donar d-flex">
-        <div className="container-left justify-content-start">
+        <div className="container-left justify-content-start min-755">
           <div className=" alineacion-texto-left">
             <h4 className="title poppins-regular">Formas de donar</h4>
             <h4 className="subtitle poppins-light">¿Cómo podés donar?</h4>
@@ -42,7 +42,7 @@ Cada aporte suma en la protección de este vital ecosistema que nos conecta con 
             </p>
           </div>
           <div className="d-flex iconos-donacion-container">
-            <div className="w-50 d-flex">
+            <div className="w-75 d-flex">
               <BsCreditCardFill className="iconos-donacion text-beige" />
               <h4 className="poppins-regular fontSize-16 text-beige">
                 TRANSFERENCIA <br />
@@ -57,7 +57,7 @@ Cada aporte suma en la protección de este vital ecosistema que nos conecta con 
             </div>
           </div>
           <div className="d-flex iconos-donacion-container">
-            <div className="w-50">
+            <div className="w-75">
               <p>Dólares:</p>
             </div>
             <div className="w-50">
@@ -65,7 +65,7 @@ Cada aporte suma en la protección de este vital ecosistema que nos conecta con 
             </div>
           </div>
           <div className="d-flex iconos-donacion-container">
-            <div className="w-50">
+            <div className="w-75">
               <p>Cuenta IBAN: CR92016111004120978788</p>
             </div>
             <div className="w-50">

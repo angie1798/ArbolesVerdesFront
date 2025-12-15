@@ -28,20 +28,20 @@ function AboutUs() {
         </div>
         <div className="container-right">
           <div className="circle-gradient">
-            <img src={personasDeColor} />
+            <img className="item-superior" src={personasDeColor} />
           </div>
         </div>
       </div>
       {/**Final sección 1 */}
 
       {/**Inicio sección 2 */}
-      <div className="d-flex background-beige">
+      <div className="d-flex background-beige item-inferior">
         <div className="justify-content-md-center centrar">
           <div className="alineacion-texto-center">
             <h3 className="outfit-semibold text-green bigger-title text-center">
               NUESTRO TRABAJO
             </h3>
-            <p className="roboto-regular">
+            <p className="roboto-regular trabajo-texto-top">
               Nuestro proyecto de restauración del cauce del Río Lagarto, con
               una duración estimada de 15 años, requiere el apoyo urgente para
               adquirir maquinaria pesada fundamental para su ejecución.
@@ -49,7 +49,7 @@ function AboutUs() {
               necesitamos: 2 retroexcavadoras adicionales, 1 chapulín, 2
               vagonetas adicionales y 1 vehículo doble tracción tipo pick-up.
             </p>
-            <p className="roboto-regular">
+            <p className="roboto-regular trabajo-texto-bottom">
               Además, disponemos de un equipo de 25 trabajadores durante las
               temporadas, y contamos con el valioso apoyo de voluntarios de las
               comunidades locales en tareas como la selección, producción y
@@ -63,44 +63,46 @@ function AboutUs() {
 
       {/**Inicio sección 3 */}
       <div className="div-fundadores d-flex flex-column">
-        <div className="row">
-          <h3 className="poppins-regular text-white">Fundadores</h3>
-          <h3 className="poppins-light text-white">Conócenos</h3>
+        <div className="row titulos">
+          <h3 className="poppins-regular text-white fontSize-26">Fundadores</h3>
+          <h3 className="poppins-light text-white fontSize-22">Conócenos</h3>
         </div>
+
         <div className="row">
           <div className="col-4"></div>
 
           <div className="col-4">
             <div className="row">
-              <div className="col-6 d-flex flex-row-reverse">
+              <div className="tree-icon">
                 <img src={tree} />
               </div>
-              <div className="col-6">
-                <h3 className="poppins-regular text-white">
+              <div className="fundador">
+                <h3 className="poppins-regular text-white fontSize-25">
                   Eduardo Morales Meza
                 </h3>
-                <h3 className="poppins-light text-white">Abogado</h3>
+                <h3 className="poppins-light text-white fontSize-22">Abogado</h3>
               </div>
             </div>
-            <p className="text-white d-flex align-items-center justify-content-center mt-5">
+            <p className="text-white mt-3">
               Abogado de profesión.
             </p>
           </div>
+
           <div className="col-4">
             <div className="row">
-              <div className="col-4 d-flex flex-row-reverse">
+              <div className="tree-icon">
                 <img src={tree} />
               </div>
-              <div className="col-8">
-                <h3 className="poppins-regular text-white">
-                  Celso Arguedas Sanchez
+              <div className="fundador long-desc">
+                <h3 className="poppins-regular text-white fontSize-25">
+                  <p>Celso</p> Arguedas Sanchez
                 </h3>
-                <h3 className="poppins-light text-white">
+                <h3 className="poppins-light text-white fontSize-22">
                   Agricultor, ganadero y comerciante
                 </h3>
               </div>
             </div>
-            <p className="text-white d-flex text-end justify-content-center mt-5">
+            <p className="text-white mt-3 long-desc">
               Propietario de la finca en la cual se está construyendo el vivero,
               en el cual se están seleccionando los árboles nativos que se
               sembrarán a las orillas del río.

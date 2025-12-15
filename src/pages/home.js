@@ -9,18 +9,6 @@ import "../styles/style.css";
 
 function Home() {
 
-  // const [titleClass, setTitleClass] = useState("");
-  // const [imageClass, setImageClass] = useState("");
-  // useEffect(() => {
-  //   if (window.innerWidth < 1200) {
-  //     setTitleClass("mt-4");
-  //     setImageClass("w-100 mt-3");
-  //   } else {
-  //     setTitleClass("");
-  //     setImageClass("");
-  //   }
-  // }, [window.innerWidth]);
-
   return (
     <div>
       {/* Seccion del hero */}
@@ -31,7 +19,7 @@ function Home() {
           </div>
         </div>
         <div className="container-right">
-          <p  className="w-75 text-white">
+          <p  className="w-75 text-white rio-text">
             El Río Lagarto es un arroyo ubicado en la provincia de Puntarenas, Costa Rica.
              La afectación de su cauce ha sido ocacionado por la tala de árboles, la contaminación de las aguas por 
              los químicos y la extracción de material del río, afectando así a las comunidades cercanas.
@@ -73,7 +61,7 @@ function Home() {
           </h4>
           <p className="problematica-text">Rescatar el cauce del río y detener la tala indiscriminada es vital para proteger la biodiversidad, el equilibrio climático y el acceso al agua para las comunidades locales.</p>
             <div className="container-button-whoWeAre problematica-button">
-            <CustomButton color="custom-button-green" textColor="text-white" text={"Ver más"} linkTo={"/about-us"}/>
+            <CustomButton color="custom-button-green" textColor="text-white" text={"Ver más"} linkTo={"/history"}/>
           </div>
         </div>
         <div className="container-right">
