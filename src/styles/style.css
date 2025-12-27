@@ -184,6 +184,7 @@ p {
   align-content: center;
 }
 .min-755 {
+  width: 755px;
   min-width: 755px;
 }
 
@@ -407,15 +408,6 @@ p {
   margin-bottom: 28px !important;
 }
 
-.como-donar {
-  background-image: url("../img/Problematica_donar.png");
-  width: 100%;
-  min-height: 446px;
-  background-repeat: no-repeat;
-  background-size: auto;
-  flex-direction: column;
-}
-
 .alineacion-texto-left {
   max-width: 432px;
   width: 100%;
@@ -446,13 +438,6 @@ p {
 }
 .centrar {
   margin: 0 auto;
-}
-.container-seccion1-donar {
-  min-height: 419px;
-  flex-direction: column;
-}
-.container-section1-texts > p {
-  margin-top: 24px;
 }
 .circle-gradient,
 .circle-gradient-no-border {
@@ -490,15 +475,6 @@ p {
   margin-bottom: 24px;
   margin-left: 0px;
 }
-.background-abstract {
-  background-image: url("../img/abstract.png");
-  height: 219px;
-  width: 183px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 24px;
-  margin-right: 30px;
-}
 .imagen-pajaros {
   margin-left: 110px;
 }
@@ -514,11 +490,6 @@ p {
   width: 100%;
   size: 16px;
   margin-left: 138px;
-}
-
-.pajaros-img {
-  width: 100%;
-  margin-top: 24px;
 }
 
 /*pagina sobre nosotros*/
@@ -1059,10 +1030,98 @@ p {
     flex-wrap: wrap;
   }
   /* sobre nosotros */
-
+  .container-seccion1-donar {
+  min-height: 419px;
+  flex-direction: column-reverse;
+  }
+  .circle-gradient {
+    margin-left: 0px;
+  }
+  .item-superior {
+    width: 100%;
+  }
+  .background-abstract {
+    margin-top: 24px;
+  }
+  .item-inferior {
+    margin-top: 0;
+  }
+  .alineacion-texto-center {
+    padding-top: 0px;
+  }
+  .div-fundadores {
+    height: auto;
+    padding-left: 36px;
+    padding-bottom: 36px;
+  }
+  .trabajo-texto-top {
+    margin-top: 32px;
+  }
+  .equipo {
+    flex-direction: column;
+    width: 100%;
+  }
+  .equipo-integrante {
+    margin-top: 32px;
+  }
   /* Donar  */
-
+  .como-donar {
+    background-color: #FFF7E3;
+    background-image: none;
+    width: 100%;
+    min-height: 446px;
+    flex-direction: column-reverse;
+  }
+  .min-755 {
+    width: 425px;
+    min-width: auto;
+  }
+  .alineacion-texto-left {
+    max-width: 360px;
+    margin-left: 32px;
+  }
+  .iconos-donacion-container {
+    margin-left: 0px;
+    padding-left: 32px;
+  }
+  .pajaros-img {
+    width: 100%;
+    margin-top: 24px;
+  }
   /* Problematica */
+  .peces-img {
+    width: 100%;
+  }
+  .texto-principal {
+    width: 100%;
+  }
+    .container-section1-texts {
+    width: 100%;
+    padding-right: 32px;
+  }
+  .segunda-seccion {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: none;
+  }
+  .titulo-proble,
+  .titulo-solu {
+    margin-top: 72px;
+    margin-bottom: 32px;
+  }
+  .subseccion {
+    width: auto;
+    align-self: auto;
+    padding: 0 32px;
+  }
+  .tercera-seccion {
+    background-image: none;
+  }
+  .tercera-seccion > .seccion {
+    width: auto;
+    padding: 0 32px;
+    margin-top: 72px;
+  }
   
 }
 @media screen and (min-width: 801px) and (max-width: 1366px) {

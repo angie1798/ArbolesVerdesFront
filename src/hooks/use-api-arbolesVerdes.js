@@ -7,7 +7,7 @@ export const sendEmail = async (name, email, content) => {
       content
     };
 
-    const response = await fetch('http://localhost:5281/api/Email', {
+    const response = await fetch('https://backedarbolesverdes.onrender.com/api/Email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

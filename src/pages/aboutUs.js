@@ -68,10 +68,10 @@ function AboutUs() {
           <h3 className="poppins-light text-white fontSize-22">Conócenos</h3>
         </div>
 
-        <div className="row">
+        <div className="row equipo">
           <div className="col-4"></div>
 
-          <div className="col-4">
+          <div className="col-4 equipo-integrante">
             <div className="row">
               <div className="tree-icon">
                 <img src={tree} />
@@ -88,7 +88,7 @@ function AboutUs() {
             </p>
           </div>
 
-          <div className="col-4">
+          <div className="col-4 equipo-integrante">
             <div className="row">
               <div className="tree-icon">
                 <img src={tree} />

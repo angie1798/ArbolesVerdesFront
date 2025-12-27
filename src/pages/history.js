@@ -24,7 +24,7 @@ return (
         </div>
         <div className="container-right">
           <div className="circle-gradient-no-border">
-            <img src={peces} />
+            <img className="peces-img" src={peces} />
           </div>
         </div>
       </div>
