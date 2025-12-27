@@ -1,4 +1,4 @@
-
+const API_URL = process.env.REACT_APP_API_URL;
 export const sendEmail = async (name, email, content) => {
   try {
     const body = {
@@ -7,7 +7,7 @@ export const sendEmail = async (name, email, content) => {
       content
     };
 
-    const response = await fetch('https://backedarbolesverdes.onrender.com/api/Email', {
+    const response = await fetch(`${API_URL}/api/Email`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
