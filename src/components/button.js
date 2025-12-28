@@ -1,10 +1,14 @@
 import "../styles/style.css";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function CustomButton({color, text, textColor, linkTo}){
 return(
     <div className={`custom-button`}>
-        <a href={linkTo} className={textColor}>
+         <Link
+        to={linkTo}
+        className={`text-decoration-none ${textColor}`}
+      >
               <button
                 type="button"
                 className={`btn ${color} ${textColor} w-100 d-flex justify-content-center`}
@@ -16,7 +20,7 @@ return(
                   <FaArrowRight />
                 </div>
               </button>
-            </a>
+            </Link>
     </div>
 );
 }
