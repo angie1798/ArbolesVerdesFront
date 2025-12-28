@@ -118,17 +118,17 @@ p {
   justify-content: end;
 }
 .navbar-text-home {
-  color: white;
+  color: white !important;
 }
 .navbar-text-home-brand {
-  color: white;
+  color: white !important;
 }
 .navbar-text-home-brand:hover,
 .navbar-text-home-brand:active {
   color: white !important;
 }
 .navbar-text-color-brand {
-  color: #4a4a4a;
+  color: #4a4a4a !important;
 }
 .navbar-text-color-brand:hover,
 .navbar-text-color-brand:active {
@@ -136,7 +136,7 @@ p {
 }
 
 .navbar-text-home:hover {
-  color: white;
+  color: white !important;
   border-bottom: 0.125rem solid #b1a17f !important;
 }
 .navbar-text-home:active,
@@ -146,10 +146,10 @@ p {
 }
 
 .navbar-text-color {
-  color: #4a4a4a;
+  color: #4a4a4a !important;
 }
 .navbar-text-color:hover {
-  color: #b1a17f;
+  color: #b1a17f !important;
 }
 .navbar-text-color:active,
 .navbar-text-color:focus {
@@ -158,11 +158,11 @@ p {
 
 .item-selected {
   border-bottom: 0.125rem solid #b1a17f !important;
-  color: #b1a17f;
+  color: #b1a17f !important;
 }
 .welcome-selected {
   border-bottom: 0.125rem solid #b1a17f !important;
-  color: white;
+  color: white !important;
 }
 
 .container-right,
@@ -964,6 +964,7 @@ p {
 .como-texto {
   margin-bottom: 36px;
 }
+
 
 @media screen and (min-width: 300px) and (max-width: 800px) {
   /* Inicio */

@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "../styles/style.css";
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, NavLink } from 'react-router-dom';
 
 function NavBar() {
   const [textStyle, setTextStyle] = useState("navbar-text-home");
@@ -52,18 +52,22 @@ function NavBar() {
           <Navbar.Toggle aria-controls="basic-navbar-nav " />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className={`justify-content-end`} variant="underline">
-              <Nav.Link className={`${textStyle} ${selected==='/'? 'welcome-selected':''}`} href="/">
-                INICIO
-              </Nav.Link>
-              <Nav.Link className={`${textStyle} ${selected==='/about-us'? 'item-selected':''}`}  href="/about-us">
-                SOBRE NOSOTROS
-              </Nav.Link>
-              <Nav.Link className={`${textStyle} ${selected==='/donate'? 'item-selected':''}`} href="/donate">
-                DONAR
-              </Nav.Link>
-              <Nav.Link className={`${textStyle} ${selected==='/history'? 'item-selected':''}`} href="/history">
-                PROBLEMÁTICA
-              </Nav.Link>
+              <Nav.Link as={NavLink} to="/" className={`${textStyle} ${selected==='/' ? 'welcome-selected' : ''}`}>
+  INICIO
+</Nav.Link>
+
+<Nav.Link as={NavLink} to="/about-us" className={`${textStyle} ${selected==='/about-us' ? 'item-selected' : ''}`}>
+  SOBRE NOSOTROS
+</Nav.Link>
+
+<Nav.Link as={NavLink} to="/donate" className={`${textStyle} ${selected==='/donate' ? 'item-selected' : ''}`}>
+  DONAR
+</Nav.Link>
+
+<Nav.Link as={NavLink} to="/history" className={`${textStyle} ${selected==='/history' ? 'item-selected' : ''}`}>
+  PROBLEMÁTICA
+</Nav.Link>
+
               <Nav.Link className={`${textStyle}`} onClick={handleContactClick}>
                 CONTÁCTANOS
               </Nav.Link>

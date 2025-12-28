@@ -4,6 +4,7 @@ import History from '../pages/history';
 import AboutUs from '../pages/aboutUs';
 import Donate from '../pages/donate';
 import Layout from '../components/layout';
+import ScrollToTop from '../components/scrolltotop';
 import {
   BrowserRouter,
   Routes,
@@ -13,6 +14,7 @@ import {
 function Router (){
 return( 
   <BrowserRouter>
+   <ScrollToTop /> 
 <Layout>
     <Routes>
       <Route path="/" element={<Home />} />
