@@ -6,10 +6,10 @@ function Footer(){
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleContactClick = (e) => {
+    const handleContactClick = (e) => {
     e.preventDefault();
-    if(location.pathname !== '/'){
-      navigate('/');
+    if(location.pathname!=='/donate'){
+    navigate('/');
     }
     setTimeout(() => {
       const section = document.getElementById('contacto');
