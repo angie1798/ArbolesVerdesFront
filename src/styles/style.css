@@ -321,6 +321,12 @@ p {
   background-color: #135a44 !important;
 }
 
+.custom-button-disabled, .custom-button-disabled:focus, .custom-button-disabled:active , .custom-button-disabled:hover{
+  color: #dcf3ec;
+  background-color: #C4C4C4 !important;
+  border-color: #C4C4C4 !important;
+}
+
 .btn-white:hover {
   background-color: #dcf3ec;
 }

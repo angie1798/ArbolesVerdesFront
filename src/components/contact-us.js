@@ -11,9 +11,14 @@ function ContactUs() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [content, setContent] = useState("");
+  const [isSending, setIsSending] = useState(false);
 
   const handleSend = async () => {
-
+    if (!name || !email || !content) {
+      toast.error("Por favor, completa todos los campos obligatorios.");
+      return;
+    }
+    setIsSending(true);
     const result = await sendEmail(
       name,
       email,
@@ -21,6 +26,7 @@ function ContactUs() {
     );
 
     if (result.status === "success") {
+      setIsSending(false);
       toast.success("¡Mensaje enviado con éxito!");
       setName("");
       setEmail("");
@@ -47,7 +53,7 @@ function ContactUs() {
             <Form.Group className="mb-3 space-between-form">
               <Form.Control 
                 type="text" 
-                placeholder="Nombre completo"
+                placeholder="Nombre completo *"
                 className="border border-secondary"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -57,7 +63,7 @@ function ContactUs() {
             <Form.Group className="mb-3 space-between-form">
               <Form.Control 
                 type="email"
-                placeholder="Correo electrónico"
+                placeholder="Correo electrónico *"
                 className="border border-secondary"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -69,7 +75,7 @@ function ContactUs() {
                 as="textarea"
                 rows={5}
                 className="border border-secondary"
-                placeholder="Mensaje"
+                placeholder="Mensaje *"
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
               />
@@ -78,10 +84,11 @@ function ContactUs() {
             <Form.Group className="d-flex justify-content-center">
               <button
                 type="button"
-                className="btn btn-success custom-button-green custom-button mt-0"
+                disabled={isSending}
+                className={isSending ? "btn btn-success custom-button-disabled custom-button mt-0" : "btn btn-success custom-button-green custom-button mt-0"}
                 onClick={handleSend}
               >
-                Enviar
+                {isSending ? "Enviando..." : "Enviar"}
               </button>
             </Form.Group>
           </Form>
