@@ -509,7 +509,7 @@ p {
 .div-fundadores {
   height: 591px;
   background-color: #135a44;
-  padding-right: 70px;
+  padding-right: 0px;
   padding-bottom: 121px;
 }
 .background-beige {
@@ -521,10 +521,18 @@ p {
   background-size: contain;
 }
 .titulos {
-  margin: 74px 0 110px 140px;
+  margin: 74px 0 -110px 140px;
 }
 .fundador {
   width: 220px;
+}
+.equipo {
+  width: 100%;
+  padding: 0px;
+}
+.equipo-integrante {
+  padding: 0px;
+  padding-top: 210px;
 }
 
 .tree-icon {
@@ -1063,6 +1071,9 @@ p {
   }
   .trabajo-texto-top {
     margin-top: 32px;
+  } 
+  .titulos {
+    margin: 74px 0 0 140px;
   }
   .equipo {
     flex-direction: column;
@@ -1070,6 +1081,7 @@ p {
   }
   .equipo-integrante {
     margin-top: 32px;
+    padding-top: 32px;
   }
   /* Donar  */
   .como-donar {

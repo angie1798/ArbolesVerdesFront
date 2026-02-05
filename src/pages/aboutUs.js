@@ -3,8 +3,14 @@ import personasDeColor from "../img/personas de color y blanca.png";
 import bichitoIzq from "../img/bichito izq.png";
 import bichitoDer from "../img/bichito der.png";
 import tree from "../img/tree.png";
+import fotoFundadores from "../img/foto-fundadores.png";
+import { IoEye } from "react-icons/io5";
+import PdfModal from "../components/pdfModal";
+import { useState } from "react";
 
 function AboutUs() {
+const [open, setOpen] = useState(false);
+
   return (
     <div className="home">
       {/**Inicio sección 1 */}
@@ -69,9 +75,11 @@ function AboutUs() {
         </div>
 
         <div className="row equipo">
-          <div className="col-4"></div>
+          <div className="col-12 col-md-6">
+            <img src={fotoFundadores} className="w-100"/>
+          </div>
 
-          <div className="col-4 equipo-integrante">
+          <div className="col-12 col-md-3 equipo-integrante">
             <div className="row">
               <div className="tree-icon">
                 <img src={tree} />
@@ -86,9 +94,13 @@ function AboutUs() {
             <p className="text-white mt-3">
               Abogado de profesión.
             </p>
+            <button className="btn btn-white text-green mt-3 " onClick={() => setOpen(true)}>
+              <IoEye/>
+              <span className="ms-2">Ver Currículum Vitae</span>
+              </button>
           </div>
 
-          <div className="col-4 equipo-integrante">
+          <div className="col-12 col-md-3 equipo-integrante">
             <div className="row">
               <div className="tree-icon">
                 <img src={tree} />
@@ -111,6 +123,7 @@ function AboutUs() {
         </div>
       </div>
       {/**Final sección 3 */}
+      <PdfModal open={open} onClose={() => setOpen(false)} />
     </div>
   );
 }

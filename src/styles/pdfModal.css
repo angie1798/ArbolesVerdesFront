@@ -1,0 +1,96 @@
+/* Overlay */
+.pdf-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.pdf-overlay.show {
+  opacity: 1;
+}
+
+.pdf-overlay.hide {
+  opacity: 0;
+}
+
+/* Modal */
+.pdf-modal {
+  background: #fff;
+  width: 90vw;
+  height: 90vh;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+}
+
+.pdf-overlay.show .pdf-modal {
+  transform: scale(1);
+}
+
+/* Toolbar */
+.pdf-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 1px solid #ddd;
+  background: #f7f7f7;
+}
+
+.pdf-toolbar button {
+  background: #e0e0e0;
+  border: none;
+  padding: 6px 10px;
+  margin: 0 4px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pdf-toolbar span {
+  font-size: 14px;
+  margin: 0 6px;
+}
+
+.download-btn {
+  text-decoration: none;
+  background: #135a44;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.close-btn {
+  color: black;
+}
+
+/* Content */
+.pdf-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Fullscreen en móvil */
+@media (max-width: 768px) {
+  .pdf-modal {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .pdf-content {
+    padding: 8px;
+  }
+}

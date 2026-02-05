@@ -1,5 +1,4 @@
 import Home from '../pages/home';
-import Contact from '../pages/contact';
 import History from '../pages/history';
 import AboutUs from '../pages/aboutUs';
 import Donate from '../pages/donate';
