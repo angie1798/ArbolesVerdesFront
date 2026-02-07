@@ -364,56 +364,6 @@ p {
   flex-direction: column;
 }
 
-.title-ubicacion {
-  color: #135a44;
-  font-size: 25px;
-  margin-top: 48px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-.text-ubicacion {
-  margin-top: 52px;
-  margin-bottom: 32px;
-}
-.text-ubicacion > h4 {
-  font-size: 22px;
-}
-.text-ubicacion > h4 > span {
-  color: #8e6818;
-}
-.container-donar {
-  background-image: url("../img/CallToAction.png");
-  min-height: 239px;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.container-donar > h4 {
-  padding-left: 24px;
-  padding-top: 54px;
-  margin-botton: 25px;
-}
-
-.container-contact {
-  width: 100%;
-  min-height: 511px;
-  flex-direction: column;
-}
-.text-contact {
-  padding-top: 48px;
-}
-.container-form {
-  width: 100%;
-  max-width: 433px;
-  border-radius: 30px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 48px 39px 23px 39px;
-}
-.space-between-form {
-  margin-bottom: 28px !important;
-}
-
 .alineacion-texto-left {
   max-width: 432px;
   width: 100%;
@@ -859,6 +809,8 @@ p {
 }
 
 .container-contact {
+  width: 100%;
+  min-height: 511px;
   padding-top: 75px;
   flex-direction: row;
 }
@@ -870,6 +822,8 @@ p {
   width: auto;
 }
 .container-form {
+  width: 100%;
+  max-width: 433px;
   border-radius: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 48px 39px 23px 39px;
@@ -997,6 +951,9 @@ p {
     padding-top: 140px;
     padding-left: 0px;
   }
+  .title-ubicacion {
+  font-size: 24px;
+}
   .banner {
     margin: 0 auto;
   }
@@ -1092,12 +1049,12 @@ p {
     flex-direction: column-reverse;
   }
   .min-755 {
-    width: 425px;
-    min-width: auto;
+    min-width: 386px;
+    max-width: 100%;
   }
   .alineacion-texto-left {
     max-width: 360px;
-    margin-left: 32px;
+    margin-left: 24px;
   }
   .iconos-donacion-container {
     margin-left: 0px;

@@ -65,15 +65,15 @@ function Home() {
           </div>
         </div>
         <div className="container-right">
-          <img src={deforestation} className={window.innerWidth<1200?'w-100 mt-3':''}/>
+          <img src={deforestation} className="w-100 mt-5 d-xl-none"/>
         </div>
       </div>
       {/*fin de la sección 3*/}
       {/**inicio de la seccion 4 */}
-      <h3 className="poppins-regular title-ubicacion">¿Dónde se ubica el <b>&nbsp;Río Lagarto</b>?</h3>
+      <h3 className="poppins-regular title-ubicacion">¿Dónde&nbsp;se&nbsp;ubica&nbsp;el<b>&nbsp;Río&nbsp;Lagarto</b>?</h3>
       <div className="w-100 d-flex container-ubicacion">
         <div className="d-flex justify-content-center bbb ">
-          <img src={ubicacion}/>
+          <img src={ubicacion}  className="w-100 d-xl-none"/>
         </div>
         <div className="ccc">
           <div className="text-ubicacion">
