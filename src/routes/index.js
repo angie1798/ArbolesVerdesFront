@@ -7,12 +7,13 @@ import ScrollToTop from '../components/scrolltotop';
 import {
   BrowserRouter,
   Routes,
-  Route
+  Route,
+  HashRouter
 } from "react-router-dom";
 
 function Router (){
 return( 
-  <BrowserRouter>
+  <HashRouter>
    <ScrollToTop /> 
 <Layout>
     <Routes>
@@ -22,7 +23,7 @@ return(
       <Route path="history" element={<History />} />
     </Routes>
   </Layout>
-  </BrowserRouter>
+  </HashRouter>
 );
   }
   export default Router;
