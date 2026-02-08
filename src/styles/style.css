@@ -868,7 +868,9 @@ p {
   margin-right: 5px;
 }
 
-.pajaros-img {
+.pajaros-img,
+.deforestacion-img,
+.ubicacion-img {
   width: auto;
 }
 
@@ -936,6 +938,29 @@ p {
 
 @media screen and (min-width: 300px) and (max-width: 800px) {
   /* Inicio */
+  .title {
+    margin-left: 24px;
+    margin-top: 24px;
+  }
+  .subtitle {
+    margin-left: 24px;
+  }
+  .problematica-text {
+    margin-left: 24px;
+  }
+  .problematica-button {
+    margin-left: 24px;
+  }
+  .text-ubicacion > h4 {
+    font-size: 22px;
+    margin-left: 24px;
+  }
+  .container-donar > h4 {
+    padding-left: 24px
+  }
+  .deforestacion-button {
+    margin-left: 24px;
+  }
   .nav-custom-container {
     display: flex;
     flex-direction: row;
@@ -953,7 +978,7 @@ p {
   }
   .title-ubicacion {
   font-size: 24px;
-}
+  }
   .banner {
     margin: 0 auto;
   }
@@ -1003,8 +1028,8 @@ p {
   }
   /* sobre nosotros */
   .container-seccion1-donar {
-  min-height: 419px;
-  flex-direction: column-reverse;
+    min-height: 419px;
+    flex-direction: column-reverse;
   }
   .circle-gradient {
     margin-left: 0px;
@@ -1016,7 +1041,8 @@ p {
     margin-top: 24px;
   }
   .item-inferior {
-    margin-top: 0;
+    margin-top: 24px;
+    padding-bottom: 24px;
   }
   .alineacion-texto-center {
     padding-top: 0px;
@@ -1028,9 +1054,9 @@ p {
   }
   .trabajo-texto-top {
     margin-top: 32px;
-  } 
+  }
   .titulos {
-    margin: 74px 0 0 140px;
+    margin: 74px 0 0 -24px;
   }
   .equipo {
     flex-direction: column;
@@ -1047,6 +1073,8 @@ p {
     width: 100%;
     min-height: 446px;
     flex-direction: column-reverse;
+    margin-top: 24px;
+    padding-bottom: 24px;
   }
   .min-755 {
     min-width: 386px;
@@ -1060,7 +1088,7 @@ p {
     margin-left: 0px;
     padding-left: 32px;
   }
-  .pajaros-img {
+  .pajaros-img, .deforestacion-img, .ubicacion-img {
     width: 100%;
     margin-top: 24px;
   }
@@ -1071,9 +1099,10 @@ p {
   .texto-principal {
     width: 100%;
   }
-    .container-section1-texts {
+  .container-section1-texts {
     width: 100%;
     padding-right: 32px;
+	  margin-left: -176px;
   }
   .segunda-seccion {
     margin-top: 0px;
