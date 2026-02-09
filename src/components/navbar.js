@@ -6,25 +6,85 @@ import "../styles/style.css";
 import { useLocation, useNavigate, NavLink } from 'react-router-dom';
 
 function NavBar() {
+  const [expanded, setExpanded] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
   const [textStyle, setTextStyle] = useState("navbar-text-home");
   const [textStyleBrand, setTextStyleBrand] = useState("navbar-text-home-brand");
+  const [backgroundStyle, setBackgroundStyle] = useState("navbar-custom-background-home");
   const [selected, setSelected] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
 
+  // useEffect(() => {
+  //   setSelected(location.pathname);
+  //   if (location.pathname !== "/") {
+  //     setTextStyle("navbar-text-color");
+  //     setTextStyleBrand("navbar-text-color-brand");
+  //   }
+  //   else {
+  //     setTextStyle("navbar-text-home");
+  //     setTextStyleBrand("navbar-text-home-brand");
+  //   }
+  // }, [location.pathname]);
+
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     if (window.innerWidth < 800) {
+  //       setTextStyle("navbar-text-color");
+  //       setTextStyleBrand("navbar-text-color-brand");
+  //     } else {
+  //       setTextStyle("navbar-text-home");
+  //       setTextStyleBrand("navbar-text-home-brand");
+  //     }
+  //   };
+
+  //   handleResize(); // Call it once on mount
+  //   window.addEventListener('resize', handleResize);
+
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
+
   useEffect(() => {
-    setSelected(location.pathname);
-    if (location.pathname !== "/") {
+  const updateNavbarStyles = () => {
+    const mobile = window.innerWidth < 800;
+
+    setIsMobile(mobile);
+
+    if (mobile) {
       setTextStyle("navbar-text-color");
       setTextStyleBrand("navbar-text-color-brand");
-    } else {
+      setBackgroundStyle("");
+    } else if (location.pathname === "/") {
       setTextStyle("navbar-text-home");
       setTextStyleBrand("navbar-text-home-brand");
+      setBackgroundStyle("navbar-custom-background-home");
+    } else {
+      setTextStyle("navbar-text-color");
+      setTextStyleBrand("navbar-text-color-brand");
+      setBackgroundStyle("");
     }
-  }, [location.pathname]);
+  };
+
+  // corre al montar y al cambiar ruta
+  updateNavbarStyles();
+
+  // escucha cambios de tamaño SIEMPRE
+  window.addEventListener("resize", updateNavbarStyles);
+
+  return () => window.removeEventListener("resize", updateNavbarStyles);
+}, [location.pathname]);
+
+
+
+  useEffect(() => {
+    setExpanded(false);
+  }, [location]);
 
   const handleContactClick = (e) => {
     e.preventDefault();
+    setExpanded(false);
     if(location.pathname!=='/donate'){
     navigate('/');
     }
@@ -39,9 +99,10 @@ function NavBar() {
   return (
     <div className="nav-custom-container w-100">
       <Navbar
-      sticky="top"
+        sticky="top"
         expand="lg"
-        className={`bg-body-tertiary navbar-custom-background container-fluid justify-content-between ${selected==='/'?'navbar-custom-background-home':''}`}
+        className={`bg-body-tertiary navbar-custom-background container-fluid justify-content-between ${backgroundStyle}`}
+        expanded={expanded}
       >
         <Container className="a" >
           <Navbar.Brand href="/" className={`poppins-medium ${textStyleBrand}`}>
@@ -49,10 +110,10 @@ function NavBar() {
           </Navbar.Brand>
         </Container>
         <Container className="b roboto-medium">
-          <Navbar.Toggle aria-controls="basic-navbar-nav " />
+          <Navbar.Toggle aria-controls="basic-navbar-nav " onClick={() => setExpanded(expanded ? false : true)}/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className={`justify-content-end`} variant="underline">
-              <Nav.Link as={NavLink} to="/" className={`${textStyle} ${selected==='/' ? 'welcome-selected' : ''}`}>
+              <Nav.Link as={NavLink} to="/" className={`${textStyle} ${selected==='/' && isMobile ? 'welcome-selected' : ''}`}>
   INICIO
 </Nav.Link>
 
