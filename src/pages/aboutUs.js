@@ -4,6 +4,7 @@ import bichitoIzq from "../img/bichito izq.png";
 import bichitoDer from "../img/bichito der.png";
 import tree from "../img/tree.png";
 import fotoFundadores from "../img/foto-fundadores.png";
+import fotoFundadoresMobile from "../img/foto-fundadores-mobile.png";
 import { IoEye } from "react-icons/io5";
 import PdfModal from "../components/pdfModal";
 import { useState } from "react";
@@ -76,7 +77,7 @@ const [open, setOpen] = useState(false);
 
         <div className="row equipo">
           <div className="col-12 col-md-6">
-            <img src={fotoFundadores} className="w-100"/>
+            <img src={window.innerWidth < 800 ? fotoFundadoresMobile : fotoFundadores} className="fundadores-img"/>
           </div>
 
           <div className="col-12 col-md-3 equipo-integrante">

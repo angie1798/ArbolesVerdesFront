@@ -870,7 +870,8 @@ p {
 
 .pajaros-img,
 .deforestacion-img,
-.ubicacion-img {
+.ubicacion-img,
+.fundadores-img {
   width: auto;
 }
 
@@ -1088,7 +1089,7 @@ p {
     margin-left: 0px;
     padding-left: 32px;
   }
-  .pajaros-img, .deforestacion-img, .ubicacion-img {
+  .pajaros-img, .deforestacion-img, .ubicacion-img, .fundadores-img {
     width: 100%;
     margin-top: 24px;
   }
