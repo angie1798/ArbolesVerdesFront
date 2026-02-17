@@ -1,25 +1,30 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Árboles Verdes",
+  "name": "Árboles Verdes | Restauración del Río Lagarto en Costa Rica",
+  "description": "Organización sin fines de lucro dedicada a la restauración ecológica del Río Lagarto y la conservación de árboles nativos en peligro de extinción en Costa Rica.",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "tree.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "tree.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "tree.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait",
+  "theme_color": "#2E7D32",
+  "background_color": "#F1F8E9",
+  "lang": "es-CR",
+  "categories": ["environment", "nonprofit", "community"]
 }
